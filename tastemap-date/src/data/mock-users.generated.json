@@ -1,0 +1,6359 @@
+[
+  {
+    "id": "user_001",
+    "nickname": "美味蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_001",
+    "birthDate": "1996-01-09",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "coffee",
+      "steak",
+      "dessert"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週日中午",
+      "週五晚上",
+      "週三晚上",
+      "週六晚上"
+    ],
+    "lat": 25.02407001513429,
+    "lng": 121.53997253837949,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_002",
+    "nickname": "快樂鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_002",
+    "birthDate": "1995-02-09",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "vegetarian"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週一晚上",
+      "週六中午",
+      "週三晚上",
+      "週二晚上",
+      "週日中午"
+    ],
+    "lat": 25.033303356063087,
+    "lng": 121.56027123609324,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_003",
+    "nickname": "甜蜜肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_003",
+    "birthDate": "1990-03-15",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "dessert",
+      "vegetarian",
+      "ramen"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週六中午",
+      "週三晚上"
+    ],
+    "lat": 25.065456944046076,
+    "lng": 121.52209510488669,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_004",
+    "nickname": "溫暖蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_004",
+    "birthDate": "1992-04-12",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "coffee",
+      "ramen"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六晚上",
+      "週日晚上",
+      "週一晚上",
+      "週四晚上"
+    ],
+    "lat": 25.053422945508267,
+    "lng": 121.57437298407731,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_005",
+    "nickname": "香辣抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_005",
+    "birthDate": "1989-04-20",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "night_market",
+      "korean"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週六晚上",
+      "週日晚上"
+    ],
+    "lat": 25.092782514716962,
+    "lng": 121.52706585394685,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_006",
+    "nickname": "清爽香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_006",
+    "birthDate": "1990-06-06",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "sushi"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週六中午",
+      "週三晚上"
+    ],
+    "lat": 25.03829413990863,
+    "lng": 121.49695208678348,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_007",
+    "nickname": "濃郁荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_007",
+    "birthDate": "1994-07-17",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "korean",
+      "vegetarian",
+      "dessert"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週六晚上",
+      "週三晚上"
+    ],
+    "lat": 25.016859425814822,
+    "lng": 121.46704775491216,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_008",
+    "nickname": "多彩香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_008",
+    "birthDate": "1989-08-06",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "sushi"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六晚上",
+      "週三晚上"
+    ],
+    "lat": 25.009128619225233,
+    "lng": 121.51163437465904,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_009",
+    "nickname": "神秘焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_009",
+    "birthDate": "1997-09-02",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "korean",
+      "dessert"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週四晚上",
+      "週二晚上",
+      "週日中午",
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 24.968352638187817,
+    "lng": 121.54475923355808,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_010",
+    "nickname": "浪漫鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_010",
+    "birthDate": "2000-09-29",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "coffee",
+      "ramen"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週六晚上",
+      "週三晚上",
+      "週四晚上",
+      "週一晚上"
+    ],
+    "lat": 25.05820895424485,
+    "lng": 121.49293520233081,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_011",
+    "nickname": "活潑楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_011",
+    "birthDate": "1996-11-21",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "steak"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週四晚上",
+      "週六晚上",
+      "週日晚上"
+    ],
+    "lat": 25.024273167491426,
+    "lng": 121.54295262548328,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_012",
+    "nickname": "沉靜薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_012",
+    "birthDate": "1996-12-08",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "dessert"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週三晚上",
+      "週六晚上",
+      "週二晚上"
+    ],
+    "lat": 25.02969304593699,
+    "lng": 121.56694986196234,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_013",
+    "nickname": "爽朗柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_013",
+    "birthDate": "1992-01-03",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "steak"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週五晚上",
+      "週四晚上"
+    ],
+    "lat": 25.066120498463047,
+    "lng": 121.52912627950079,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_014",
+    "nickname": "細膩楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_014",
+    "birthDate": "1999-02-02",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "steak",
+      "korean",
+      "vegetarian"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週日中午"
+    ],
+    "lat": 25.046084096565377,
+    "lng": 121.57689643611154,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_015",
+    "nickname": "獨特肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_015",
+    "birthDate": "1995-03-19",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "korean",
+      "brunch",
+      "ramen"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週二晚上",
+      "週五晚上"
+    ],
+    "lat": 25.09676656869473,
+    "lng": 121.52760799350217,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_016",
+    "nickname": "歡樂鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_016",
+    "birthDate": "2001-04-14",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "korean",
+      "night_market",
+      "izakaya"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週日中午",
+      "週六晚上",
+      "週四晚上"
+    ],
+    "lat": 25.040375317494853,
+    "lng": 121.50025940935686,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_017",
+    "nickname": "悠閒楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_017",
+    "birthDate": "1992-05-16",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "ramen",
+      "hotpot"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週六晚上",
+      "週日晚上",
+      "週日中午",
+      "週五晚上"
+    ],
+    "lat": 25.016074775809887,
+    "lng": 121.45945152501994,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_018",
+    "nickname": "精緻貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_018",
+    "birthDate": "1991-05-25",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "steak"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週日中午",
+      "週二晚上",
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.009435437717478,
+    "lng": 121.51469027913642,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_019",
+    "nickname": "自在柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_019",
+    "birthDate": "1994-07-04",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "hotpot"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週三晚上",
+      "週五晚上",
+      "週六中午",
+      "週四晚上"
+    ],
+    "lat": 24.963348253537433,
+    "lng": 121.53603764573484,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_020",
+    "nickname": "好客咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_020",
+    "birthDate": "1990-08-21",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "vegetarian",
+      "steak",
+      "hotpot"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週一晚上",
+      "週四晚上",
+      "週三晚上",
+      "週六晚上",
+      "週六中午"
+    ],
+    "lat": 25.056946172678376,
+    "lng": 121.49266392707312,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_021",
+    "nickname": "美味栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_021",
+    "birthDate": "1998-09-12",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "thai",
+      "steak"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週一晚上",
+      "週三晚上"
+    ],
+    "lat": 25.027721404893324,
+    "lng": 121.5446836491041,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_022",
+    "nickname": "快樂貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_022",
+    "birthDate": "1995-10-22",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "izakaya",
+      "dessert"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週五晚上",
+      "週二晚上",
+      "週日晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.037353466641626,
+    "lng": 121.5668498060503,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_023",
+    "nickname": "甜蜜柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_023",
+    "birthDate": "1995-11-16",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "thai",
+      "steak"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週五晚上",
+      "週日晚上",
+      "週六晚上",
+      "週三晚上"
+    ],
+    "lat": 25.065315539525823,
+    "lng": 121.52667919998291,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_024",
+    "nickname": "溫暖蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_024",
+    "birthDate": "2000-12-03",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "korean"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週四晚上",
+      "週五晚上",
+      "週日中午"
+    ],
+    "lat": 25.050178621384315,
+    "lng": 121.58167735031061,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_025",
+    "nickname": "香辣芝麻",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_025",
+    "birthDate": "1997-01-03",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "vegetarian",
+      "dessert",
+      "night_market"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週六晚上",
+      "週二晚上",
+      "週日中午",
+      "週日晚上",
+      "週五晚上"
+    ],
+    "lat": 25.094713239688424,
+    "lng": 121.52072511071573,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_026",
+    "nickname": "清爽荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_026",
+    "birthDate": "1994-02-15",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "vegetarian",
+      "night_market"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週五晚上",
+      "週一晚上",
+      "週二晚上",
+      "週四晚上"
+    ],
+    "lat": 25.03928176967334,
+    "lng": 121.50237855682475,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_027",
+    "nickname": "濃郁貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_027",
+    "birthDate": "1997-02-21",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "brunch"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週日中午",
+      "週六中午",
+      "週日晚上"
+    ],
+    "lat": 25.01788140742667,
+    "lng": 121.46145079494174,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_028",
+    "nickname": "多彩焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_028",
+    "birthDate": "1989-04-08",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "brunch",
+      "steak"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六中午",
+      "週一晚上",
+      "週日中午"
+    ],
+    "lat": 25.011890910854564,
+    "lng": 121.51918614857364,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_029",
+    "nickname": "神秘貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_029",
+    "birthDate": "1989-04-21",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "coffee",
+      "sushi"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日中午",
+      "週四晚上",
+      "週六中午",
+      "週一晚上"
+    ],
+    "lat": 24.96934710448654,
+    "lng": 121.54398616512212,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_030",
+    "nickname": "浪漫栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_030",
+    "birthDate": "1993-05-27",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "hotpot",
+      "ramen"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週四晚上",
+      "週日中午",
+      "週五晚上",
+      "週日晚上",
+      "週二晚上"
+    ],
+    "lat": 25.05745498237107,
+    "lng": 121.48852118533291,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_031",
+    "nickname": "活潑栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_031",
+    "birthDate": "1997-06-27",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "hotpot"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六中午",
+      "週五晚上",
+      "週二晚上",
+      "週日晚上"
+    ],
+    "lat": 25.02621759323543,
+    "lng": 121.54545114673395,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_032",
+    "nickname": "沉靜薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_032",
+    "birthDate": "1988-08-21",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "ramen"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週六晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.032558112749367,
+    "lng": 121.56182647141162,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_033",
+    "nickname": "爽朗楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_033",
+    "birthDate": "1996-09-07",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "hotpot",
+      "sushi",
+      "coffee"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週五晚上",
+      "週六中午",
+      "週六晚上"
+    ],
+    "lat": 25.060583586989438,
+    "lng": 121.52979040724692,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_034",
+    "nickname": "細膩焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_034",
+    "birthDate": "1999-10-03",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "vegetarian",
+      "dessert"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週一晚上",
+      "週日中午",
+      "週四晚上"
+    ],
+    "lat": 25.048260319739114,
+    "lng": 121.57551541347709,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_035",
+    "nickname": "獨特荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_035",
+    "birthDate": "1995-10-24",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "thai"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週日中午",
+      "週一晚上",
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.094816475869155,
+    "lng": 121.52512447518065,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_036",
+    "nickname": "歡樂薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_036",
+    "birthDate": "1994-12-05",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "brunch"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週六晚上",
+      "週二晚上"
+    ],
+    "lat": 25.034689996295143,
+    "lng": 121.50125772379897,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_037",
+    "nickname": "悠閒鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_037",
+    "birthDate": "2001-01-06",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "vegetarian",
+      "steak",
+      "thai"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週六晚上",
+      "週六中午"
+    ],
+    "lat": 25.018455813122912,
+    "lng": 121.46633122292998,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_038",
+    "nickname": "精緻巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_038",
+    "birthDate": "1994-01-20",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "steak"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上",
+      "週六中午"
+    ],
+    "lat": 25.013519282150085,
+    "lng": 121.51664289897074,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_039",
+    "nickname": "自在薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_039",
+    "birthDate": "2001-03-19",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "sushi",
+      "thai",
+      "hotpot"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日晚上",
+      "週一晚上"
+    ],
+    "lat": 24.966911548013332,
+    "lng": 121.54474287689105,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_040",
+    "nickname": "好客柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_040",
+    "birthDate": "1997-04-13",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "vegetarian",
+      "sushi",
+      "night_market"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週二晚上",
+      "週四晚上",
+      "週六晚上"
+    ],
+    "lat": 25.0565039132433,
+    "lng": 121.48438023569248,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_041",
+    "nickname": "美味抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_041",
+    "birthDate": "1991-05-09",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "sushi",
+      "thai"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週一晚上",
+      "週六晚上",
+      "週日中午",
+      "週三晚上"
+    ],
+    "lat": 25.026924274867866,
+    "lng": 121.54699462700822,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_042",
+    "nickname": "快樂香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_042",
+    "birthDate": "1994-06-01",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "dessert",
+      "steak"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週二晚上",
+      "週六中午",
+      "週一晚上",
+      "週日中午",
+      "週四晚上"
+    ],
+    "lat": 25.03396357953735,
+    "lng": 121.56834808423416,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_043",
+    "nickname": "甜蜜楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_043",
+    "birthDate": "1993-07-09",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "coffee",
+      "brunch",
+      "night_market"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週六晚上",
+      "週一晚上",
+      "週日晚上",
+      "週五晚上",
+      "週六中午"
+    ],
+    "lat": 25.059016456302256,
+    "lng": 121.52405713638059,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_044",
+    "nickname": "溫暖楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_044",
+    "birthDate": "1999-08-02",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "ramen",
+      "korean",
+      "steak"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週四晚上",
+      "週二晚上"
+    ],
+    "lat": 25.045351678543724,
+    "lng": 121.58007300758223,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_045",
+    "nickname": "香辣巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_045",
+    "birthDate": "1998-08-31",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "vegetarian",
+      "night_market",
+      "izakaya"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週日晚上",
+      "週六晚上",
+      "週四晚上",
+      "週五晚上"
+    ],
+    "lat": 25.099174828161484,
+    "lng": 121.52233299505897,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_046",
+    "nickname": "清爽薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_046",
+    "birthDate": "1990-10-02",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "sushi",
+      "ramen"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週六中午",
+      "週日晚上",
+      "週三晚上",
+      "週五晚上"
+    ],
+    "lat": 25.034898382431365,
+    "lng": 121.49616889736242,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_047",
+    "nickname": "濃郁鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_047",
+    "birthDate": "1992-11-20",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "steak"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週五晚上",
+      "週二晚上",
+      "週六中午"
+    ],
+    "lat": 25.017998133500573,
+    "lng": 121.46459116863505,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_048",
+    "nickname": "多彩薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_048",
+    "birthDate": "1995-12-18",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "vegetarian",
+      "night_market",
+      "izakaya"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.00882134186104,
+    "lng": 121.5132657036488,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_049",
+    "nickname": "神秘鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_049",
+    "birthDate": "1988-01-03",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "vegetarian"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週二晚上",
+      "週六晚上",
+      "週三晚上",
+      "週六中午"
+    ],
+    "lat": 24.965402040612418,
+    "lng": 121.53949975604331,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_050",
+    "nickname": "浪漫香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_050",
+    "birthDate": "1996-02-03",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "coffee"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日中午",
+      "週日晚上",
+      "週五晚上"
+    ],
+    "lat": 25.057742288561073,
+    "lng": 121.48961349955947,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_051",
+    "nickname": "活潑巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_051",
+    "birthDate": "1996-03-11",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "izakaya",
+      "hotpot"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六中午",
+      "週二晚上",
+      "週一晚上",
+      "週日中午",
+      "週五晚上"
+    ],
+    "lat": 25.026227390488145,
+    "lng": 121.54398098591669,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_052",
+    "nickname": "沉靜荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_052",
+    "birthDate": "2001-04-05",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "korean",
+      "hotpot"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上"
+    ],
+    "lat": 25.035032712684014,
+    "lng": 121.56536189147504,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_053",
+    "nickname": "爽朗抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_053",
+    "birthDate": "1994-04-30",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "night_market",
+      "korean"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週三晚上",
+      "週六中午",
+      "週五晚上",
+      "週六晚上",
+      "週四晚上"
+    ],
+    "lat": 25.068970891107806,
+    "lng": 121.52221688998631,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_054",
+    "nickname": "細膩楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_054",
+    "birthDate": "1994-05-22",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "hotpot"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上",
+      "週四晚上"
+    ],
+    "lat": 25.05397040282702,
+    "lng": 121.58025944574224,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_055",
+    "nickname": "獨特芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_055",
+    "birthDate": "1994-07-02",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "night_market"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週二晚上",
+      "週日中午",
+      "週四晚上"
+    ],
+    "lat": 25.091179520119912,
+    "lng": 121.5294829466939,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_056",
+    "nickname": "歡樂薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_056",
+    "birthDate": "1988-08-15",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "korean"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週日中午",
+      "週二晚上"
+    ],
+    "lat": 25.040720501501582,
+    "lng": 121.49851023434522,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_057",
+    "nickname": "悠閒抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_057",
+    "birthDate": "1993-08-23",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "izakaya"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週四晚上",
+      "週一晚上",
+      "週日晚上"
+    ],
+    "lat": 25.016656391831113,
+    "lng": 121.46029744181268,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_058",
+    "nickname": "精緻荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_058",
+    "birthDate": "1989-09-28",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "sushi",
+      "korean",
+      "coffee"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週五晚上",
+      "週日中午",
+      "週二晚上",
+      "週一晚上"
+    ],
+    "lat": 25.013415209434463,
+    "lng": 121.51908083958551,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_059",
+    "nickname": "自在草莓",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_059",
+    "birthDate": "2001-10-29",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "sushi"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週六中午",
+      "週一晚上",
+      "週六晚上",
+      "週日中午"
+    ],
+    "lat": 24.962147364344446,
+    "lng": 121.54447412583418,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_060",
+    "nickname": "好客抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_060",
+    "birthDate": "1991-12-07",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "dessert"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日晚上",
+      "週六中午",
+      "週二晚上",
+      "週一晚上",
+      "週日中午"
+    ],
+    "lat": 25.056395802615675,
+    "lng": 121.49226168935606,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_061",
+    "nickname": "美味巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_061",
+    "birthDate": "1992-01-19",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "hotpot",
+      "izakaya",
+      "dessert"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.027002632104793,
+    "lng": 121.5445804670984,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_062",
+    "nickname": "快樂蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_062",
+    "birthDate": "1996-01-21",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "night_market",
+      "vegetarian",
+      "thai"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週四晚上",
+      "週一晚上"
+    ],
+    "lat": 25.037387112820987,
+    "lng": 121.5619910577964,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_063",
+    "nickname": "甜蜜鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_063",
+    "birthDate": "1991-03-08",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "vegetarian",
+      "izakaya"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週四晚上",
+      "週六晚上",
+      "週一晚上"
+    ],
+    "lat": 25.065224578295368,
+    "lng": 121.52649580109865,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_064",
+    "nickname": "溫暖蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_064",
+    "birthDate": "1997-04-16",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "thai",
+      "hotpot"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週四晚上",
+      "週二晚上"
+    ],
+    "lat": 25.053789059031754,
+    "lng": 121.58222069495544,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_065",
+    "nickname": "香辣巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_065",
+    "birthDate": "1994-05-18",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "vegetarian"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週三晚上",
+      "週五晚上",
+      "週日中午",
+      "週四晚上",
+      "週六晚上"
+    ],
+    "lat": 25.093553230180405,
+    "lng": 121.52957255160204,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_066",
+    "nickname": "清爽芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_066",
+    "birthDate": "1988-06-19",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "dessert",
+      "izakaya"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週二晚上",
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.03255428521335,
+    "lng": 121.49657303294026,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_067",
+    "nickname": "濃郁咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_067",
+    "birthDate": "1988-07-16",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "vegetarian",
+      "izakaya",
+      "night_market"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週三晚上",
+      "週日中午",
+      "週六晚上",
+      "週六中午"
+    ],
+    "lat": 25.013814592630137,
+    "lng": 121.46167523512104,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_068",
+    "nickname": "多彩芝麻",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_068",
+    "birthDate": "1996-08-22",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "izakaya",
+      "dessert"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週四晚上",
+      "週二晚上",
+      "週六中午",
+      "週日中午"
+    ],
+    "lat": 25.01060513288947,
+    "lng": 121.5198848746298,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_069",
+    "nickname": "神秘薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_069",
+    "birthDate": "2000-09-20",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "izakaya",
+      "korean"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週一晚上",
+      "週六中午",
+      "週二晚上"
+    ],
+    "lat": 24.969269409508442,
+    "lng": 121.53768323601828,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_070",
+    "nickname": "浪漫抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_070",
+    "birthDate": "1991-09-28",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "vegetarian",
+      "brunch",
+      "korean"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週三晚上",
+      "週日中午",
+      "週四晚上",
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.063524064225145,
+    "lng": 121.49190936841956,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_071",
+    "nickname": "活潑鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_071",
+    "birthDate": "1994-10-30",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "dessert",
+      "thai"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六中午",
+      "週五晚上",
+      "週日晚上",
+      "週四晚上"
+    ],
+    "lat": 25.030582088929602,
+    "lng": 121.54619139253815,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_072",
+    "nickname": "沉靜芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_072",
+    "birthDate": "1989-12-18",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "coffee",
+      "hotpot",
+      "korean"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週六中午",
+      "週日中午",
+      "週四晚上"
+    ],
+    "lat": 25.03166815555608,
+    "lng": 121.56534742916003,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_073",
+    "nickname": "爽朗薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_073",
+    "birthDate": "1988-01-06",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "steak",
+      "coffee",
+      "hotpot"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週三晚上",
+      "週日晚上",
+      "週六中午",
+      "週二晚上",
+      "週四晚上"
+    ],
+    "lat": 25.06653885362763,
+    "lng": 121.52175152184209,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_074",
+    "nickname": "細膩薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_074",
+    "birthDate": "1996-02-02",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "vegetarian",
+      "night_market"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六晚上",
+      "週日中午"
+    ],
+    "lat": 25.050180534365122,
+    "lng": 121.57436501152768,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_075",
+    "nickname": "獨特蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_075",
+    "birthDate": "1992-02-24",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "steak"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週三晚上",
+      "週一晚上",
+      "週五晚上",
+      "週日中午",
+      "週六中午"
+    ],
+    "lat": 25.095602917133363,
+    "lng": 121.52526124499506,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_076",
+    "nickname": "歡樂楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_076",
+    "birthDate": "1999-04-19",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "thai"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週五晚上",
+      "週一晚上",
+      "週三晚上",
+      "週日中午",
+      "週二晚上"
+    ],
+    "lat": 25.033860282652547,
+    "lng": 121.50023140229145,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_077",
+    "nickname": "悠閒薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_077",
+    "birthDate": "1998-05-12",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "korean",
+      "brunch"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週四晚上",
+      "週二晚上",
+      "週一晚上",
+      "週五晚上",
+      "週六中午"
+    ],
+    "lat": 25.011777369471734,
+    "lng": 121.4676882494539,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_078",
+    "nickname": "精緻薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_078",
+    "birthDate": "2001-06-12",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "thai"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週三晚上",
+      "週五晚上"
+    ],
+    "lat": 25.011349495421165,
+    "lng": 121.51999766739318,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_079",
+    "nickname": "自在香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_079",
+    "birthDate": "1998-07-14",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "thai",
+      "korean",
+      "night_market"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週四晚上",
+      "週六中午",
+      "週一晚上",
+      "週二晚上",
+      "週六晚上"
+    ],
+    "lat": 24.96409860173054,
+    "lng": 121.54276637395284,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_080",
+    "nickname": "好客芝麻",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_080",
+    "birthDate": "1991-08-16",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "hotpot"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上"
+    ],
+    "lat": 25.059302285794633,
+    "lng": 121.49198175103822,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_081",
+    "nickname": "美味柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_081",
+    "birthDate": "1998-08-29",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "steak"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六晚上",
+      "週日中午",
+      "週三晚上",
+      "週四晚上",
+      "週日晚上"
+    ],
+    "lat": 25.02257691763248,
+    "lng": 121.54362406806042,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_082",
+    "nickname": "快樂巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_082",
+    "birthDate": "1999-10-03",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "brunch",
+      "coffee",
+      "steak"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週四晚上",
+      "週日中午",
+      "週一晚上",
+      "週六中午",
+      "週二晚上"
+    ],
+    "lat": 25.034296530598777,
+    "lng": 121.56873750815168,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_083",
+    "nickname": "甜蜜貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_083",
+    "birthDate": "1990-10-25",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "coffee"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週五晚上",
+      "週三晚上",
+      "週六晚上"
+    ],
+    "lat": 25.06372624146845,
+    "lng": 121.52480810178677,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_084",
+    "nickname": "溫暖咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_084",
+    "birthDate": "2001-12-08",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "steak",
+      "night_market",
+      "hotpot"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週五晚上",
+      "週日晚上"
+    ],
+    "lat": 25.047262749246787,
+    "lng": 121.57532934423955,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_085",
+    "nickname": "香辣珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_085",
+    "birthDate": "1991-01-10",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "steak",
+      "vegetarian"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週五晚上",
+      "週六晚上"
+    ],
+    "lat": 25.091332745864054,
+    "lng": 121.52023948361399,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_086",
+    "nickname": "清爽珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_086",
+    "birthDate": "1991-01-26",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "korean",
+      "night_market",
+      "izakaya"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週二晚上",
+      "週日晚上",
+      "週六晚上",
+      "週日中午"
+    ],
+    "lat": 25.036151849209798,
+    "lng": 121.50012937701865,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_087",
+    "nickname": "濃郁薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_087",
+    "birthDate": "1992-03-09",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "vegetarian"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週四晚上",
+      "週五晚上"
+    ],
+    "lat": 25.01035458557168,
+    "lng": 121.46295723225408,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_088",
+    "nickname": "多彩抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_088",
+    "birthDate": "1992-03-28",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "coffee"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週一晚上",
+      "週四晚上",
+      "週日中午",
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.005882065724585,
+    "lng": 121.51562777439598,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_089",
+    "nickname": "神秘香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_089",
+    "birthDate": "1989-04-25",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "steak"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週六晚上",
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 24.97024633593438,
+    "lng": 121.54221936414623,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_090",
+    "nickname": "浪漫荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_090",
+    "birthDate": "1993-05-28",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "sushi",
+      "thai",
+      "night_market"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週二晚上",
+      "週日晚上"
+    ],
+    "lat": 25.06314275219012,
+    "lng": 121.48783792588115,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_091",
+    "nickname": "活潑鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_091",
+    "birthDate": "1995-06-30",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "dessert",
+      "izakaya",
+      "sushi"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六晚上",
+      "週一晚上",
+      "週五晚上",
+      "週日晚上",
+      "週三晚上"
+    ],
+    "lat": 25.022066410325003,
+    "lng": 121.53854317415693,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_092",
+    "nickname": "沉靜香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_092",
+    "birthDate": "1993-07-31",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "ramen",
+      "sushi",
+      "izakaya"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週三晚上",
+      "週五晚上",
+      "週日中午",
+      "週六晚上"
+    ],
+    "lat": 25.036492556628772,
+    "lng": 121.56316189074656,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_093",
+    "nickname": "爽朗肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_093",
+    "birthDate": "1990-08-26",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "thai"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週六中午",
+      "週日晚上",
+      "週六晚上",
+      "週三晚上"
+    ],
+    "lat": 25.060587883215398,
+    "lng": 121.52054024559213,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_094",
+    "nickname": "細膩咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_094",
+    "birthDate": "1988-10-16",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "ramen"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週五晚上",
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.053628663202748,
+    "lng": 121.57779690288194,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_095",
+    "nickname": "獨特咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_095",
+    "birthDate": "1994-11-03",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "steak",
+      "hotpot",
+      "ramen"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週二晚上",
+      "週六晚上"
+    ],
+    "lat": 25.09716641958337,
+    "lng": 121.5238304878911,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_096",
+    "nickname": "歡樂栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_096",
+    "birthDate": "1990-12-04",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "hotpot"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週一晚上"
+    ],
+    "lat": 25.03201563430624,
+    "lng": 121.50366962477425,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_097",
+    "nickname": "悠閒肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_097",
+    "birthDate": "1996-01-19",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "izakaya",
+      "hotpot"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週六晚上",
+      "週二晚上",
+      "週日晚上",
+      "週六中午",
+      "週四晚上"
+    ],
+    "lat": 25.011775418015663,
+    "lng": 121.46499180908035,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_098",
+    "nickname": "精緻荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_098",
+    "birthDate": "1990-01-25",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "izakaya",
+      "sushi",
+      "coffee"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週四晚上",
+      "週五晚上",
+      "週日晚上",
+      "週六晚上",
+      "週一晚上"
+    ],
+    "lat": 25.006512392843145,
+    "lng": 121.51094117556234,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_099",
+    "nickname": "自在貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_099",
+    "birthDate": "1999-03-05",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "brunch",
+      "vegetarian",
+      "night_market"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日中午",
+      "週二晚上",
+      "週四晚上",
+      "週五晚上"
+    ],
+    "lat": 24.971686296654397,
+    "lng": 121.54383810786204,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_100",
+    "nickname": "好客肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_100",
+    "birthDate": "1995-03-26",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "korean"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週六中午",
+      "週日晚上",
+      "週三晚上",
+      "週二晚上",
+      "週六晚上"
+    ],
+    "lat": 25.061601018017623,
+    "lng": 121.4839917082428,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_101",
+    "nickname": "美味草莓",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_101",
+    "birthDate": "1990-05-06",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "sushi",
+      "steak",
+      "dessert"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週五晚上",
+      "週三晚上",
+      "週一晚上"
+    ],
+    "lat": 25.03088993931096,
+    "lng": 121.53935468990078,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_102",
+    "nickname": "快樂楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_102",
+    "birthDate": "1994-05-23",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "steak",
+      "night_market",
+      "sushi"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上",
+      "週四晚上"
+    ],
+    "lat": 25.028493697405327,
+    "lng": 121.56297195103718,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_103",
+    "nickname": "甜蜜栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_103",
+    "birthDate": "1989-07-20",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "dessert",
+      "brunch",
+      "coffee"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週日晚上",
+      "週一晚上",
+      "週四晚上",
+      "週日中午",
+      "週五晚上"
+    ],
+    "lat": 25.061273675836624,
+    "lng": 121.5203172566346,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_104",
+    "nickname": "溫暖栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_104",
+    "birthDate": "1999-08-21",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "dessert"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週二晚上",
+      "週三晚上",
+      "週日晚上"
+    ],
+    "lat": 25.044955990408546,
+    "lng": 121.57666600837558,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_105",
+    "nickname": "香辣楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_105",
+    "birthDate": "1989-08-28",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "sushi"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週三晚上",
+      "週六晚上",
+      "週二晚上"
+    ],
+    "lat": 25.0989259721525,
+    "lng": 121.52526440444403,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_106",
+    "nickname": "清爽蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_106",
+    "birthDate": "1997-09-26",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "hotpot",
+      "night_market"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週一晚上",
+      "週日晚上"
+    ],
+    "lat": 25.037940624099225,
+    "lng": 121.49771685795952,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_107",
+    "nickname": "濃郁柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_107",
+    "birthDate": "1998-10-28",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "dessert"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上",
+      "週四晚上"
+    ],
+    "lat": 25.010319425948897,
+    "lng": 121.4642227011146,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_108",
+    "nickname": "多彩芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_108",
+    "birthDate": "1996-12-13",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "dessert"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六晚上",
+      "週一晚上",
+      "週日中午"
+    ],
+    "lat": 25.011041861195118,
+    "lng": 121.51772078597453,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_109",
+    "nickname": "神秘巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_109",
+    "birthDate": "1996-01-11",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "brunch"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日晚上",
+      "週日中午"
+    ],
+    "lat": 24.967143871400506,
+    "lng": 121.53603096788656,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_110",
+    "nickname": "浪漫焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_110",
+    "birthDate": "2000-02-14",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "sushi"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週二晚上",
+      "週六中午",
+      "週四晚上"
+    ],
+    "lat": 25.05937259351276,
+    "lng": 121.48482587647578,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_111",
+    "nickname": "活潑貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_111",
+    "birthDate": "2000-03-16",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "izakaya",
+      "dessert",
+      "thai"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週五晚上",
+      "週日晚上",
+      "週二晚上",
+      "週日中午",
+      "週六晚上"
+    ],
+    "lat": 25.02335404677456,
+    "lng": 121.54611623801478,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_112",
+    "nickname": "沉靜薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_112",
+    "birthDate": "2000-04-05",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "hotpot"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週日晚上",
+      "週一晚上",
+      "週六晚上",
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.03478601521766,
+    "lng": 121.56139435159508,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_113",
+    "nickname": "爽朗鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_113",
+    "birthDate": "1997-05-01",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "hotpot"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週五晚上",
+      "週二晚上"
+    ],
+    "lat": 25.062494893752504,
+    "lng": 121.52809933027486,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_114",
+    "nickname": "細膩貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_114",
+    "birthDate": "1989-06-09",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "sushi"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週日中午",
+      "週三晚上"
+    ],
+    "lat": 25.046507978833745,
+    "lng": 121.57553897268325,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_115",
+    "nickname": "獨特薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_115",
+    "birthDate": "1995-07-08",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "brunch",
+      "izakaya",
+      "night_market"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週一晚上",
+      "週六中午",
+      "週日晚上"
+    ],
+    "lat": 25.091720608479807,
+    "lng": 121.52048983736196,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_116",
+    "nickname": "歡樂焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_116",
+    "birthDate": "2000-08-16",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "steak"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週五晚上",
+      "週日中午",
+      "週一晚上",
+      "週四晚上"
+    ],
+    "lat": 25.032365815189202,
+    "lng": 121.50343480701186,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_117",
+    "nickname": "悠閒芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_117",
+    "birthDate": "2001-09-13",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "vegetarian",
+      "ramen"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週日中午",
+      "週三晚上",
+      "週六晚上"
+    ],
+    "lat": 25.01626076364983,
+    "lng": 121.46464224749896,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_118",
+    "nickname": "精緻薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_118",
+    "birthDate": "1990-10-19",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "coffee",
+      "korean",
+      "steak"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週二晚上",
+      "週六中午"
+    ],
+    "lat": 25.013994982752486,
+    "lng": 121.5126899115392,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_119",
+    "nickname": "自在鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_119",
+    "birthDate": "1995-11-01",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "dessert"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週一晚上",
+      "週二晚上",
+      "週日中午",
+      "週六晚上"
+    ],
+    "lat": 24.966441810543646,
+    "lng": 121.53919205150474,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_120",
+    "nickname": "好客荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_120",
+    "birthDate": "1988-12-10",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "hotpot",
+      "night_market",
+      "thai"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日中午",
+      "週一晚上"
+    ],
+    "lat": 25.060181458342356,
+    "lng": 121.48665271276096,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_121",
+    "nickname": "美味咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_121",
+    "birthDate": "1996-01-07",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "izakaya",
+      "brunch"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週日晚上",
+      "週六中午",
+      "週日中午"
+    ],
+    "lat": 25.026412031521556,
+    "lng": 121.54727464036505,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_122",
+    "nickname": "快樂蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_122",
+    "birthDate": "1996-01-24",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "ramen",
+      "izakaya",
+      "sushi"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週五晚上",
+      "週三晚上",
+      "週四晚上"
+    ],
+    "lat": 25.036994423632976,
+    "lng": 121.56275412340415,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_123",
+    "nickname": "甜蜜薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_123",
+    "birthDate": "1991-03-14",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "brunch"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週六晚上",
+      "週六中午",
+      "週日晚上"
+    ],
+    "lat": 25.063162235783878,
+    "lng": 121.52209261067212,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_124",
+    "nickname": "溫暖芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_124",
+    "birthDate": "1993-03-30",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "vegetarian",
+      "korean",
+      "ramen"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週日晚上",
+      "週五晚上",
+      "週六中午",
+      "週日中午"
+    ],
+    "lat": 25.050524173226208,
+    "lng": 121.57991576656187,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_125",
+    "nickname": "香辣芝麻",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_125",
+    "birthDate": "1994-05-02",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "hotpot",
+      "brunch",
+      "ramen"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週六晚上",
+      "週四晚上",
+      "週五晚上",
+      "週二晚上",
+      "週三晚上"
+    ],
+    "lat": 25.099350345765703,
+    "lng": 121.52992995674023,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_126",
+    "nickname": "清爽貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_126",
+    "birthDate": "1991-06-15",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "brunch",
+      "night_market",
+      "ramen"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週二晚上",
+      "週一晚上",
+      "週日晚上",
+      "週日中午",
+      "週三晚上"
+    ],
+    "lat": 25.031481435565745,
+    "lng": 121.49416153960954,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_127",
+    "nickname": "濃郁蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_127",
+    "birthDate": "2001-07-14",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "izakaya",
+      "korean",
+      "sushi"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週二晚上",
+      "週日中午",
+      "週一晚上",
+      "週五晚上"
+    ],
+    "lat": 25.01453041262319,
+    "lng": 121.4610589888012,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_128",
+    "nickname": "多彩珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_128",
+    "birthDate": "1995-07-31",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "brunch"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上",
+      "週六中午",
+      "週一晚上",
+      "週二晚上"
+    ],
+    "lat": 25.006238922213672,
+    "lng": 121.51316908862442,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_129",
+    "nickname": "神秘草莓",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_129",
+    "birthDate": "1990-08-30",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "izakaya",
+      "night_market",
+      "vegetarian"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日中午",
+      "週二晚上",
+      "週日晚上",
+      "週五晚上",
+      "週三晚上"
+    ],
+    "lat": 24.96691423067171,
+    "lng": 121.54266713803308,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_130",
+    "nickname": "浪漫荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_130",
+    "birthDate": "1995-10-01",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "vegetarian",
+      "hotpot"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週二晚上",
+      "週四晚上"
+    ],
+    "lat": 25.05718010834325,
+    "lng": 121.49274095311947,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_131",
+    "nickname": "活潑薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_131",
+    "birthDate": "1992-10-30",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "brunch"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週二晚上",
+      "週三晚上"
+    ],
+    "lat": 25.028215853945817,
+    "lng": 121.5445404253616,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_132",
+    "nickname": "沉靜抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_132",
+    "birthDate": "2001-12-02",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "hotpot",
+      "thai"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週一晚上",
+      "週二晚上"
+    ],
+    "lat": 25.030920654641932,
+    "lng": 121.56294911948032,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_133",
+    "nickname": "爽朗焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_133",
+    "birthDate": "1995-01-14",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "izakaya"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週二晚上"
+    ],
+    "lat": 25.060812935348135,
+    "lng": 121.52204077931587,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_134",
+    "nickname": "細膩薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_134",
+    "birthDate": "1998-01-29",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "vegetarian"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六晚上",
+      "週六中午",
+      "週四晚上",
+      "週日晚上",
+      "週一晚上"
+    ],
+    "lat": 25.050449352111666,
+    "lng": 121.57910412838636,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_135",
+    "nickname": "獨特巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_135",
+    "birthDate": "1997-03-19",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "sushi",
+      "izakaya",
+      "dessert"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週一晚上",
+      "週日晚上"
+    ],
+    "lat": 25.094771319706922,
+    "lng": 121.52134947777027,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_136",
+    "nickname": "歡樂焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_136",
+    "birthDate": "1997-04-03",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "night_market",
+      "coffee",
+      "thai"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週五晚上",
+      "週六中午",
+      "週四晚上",
+      "週二晚上",
+      "週一晚上"
+    ],
+    "lat": 25.03697975744866,
+    "lng": 121.49961084558022,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_137",
+    "nickname": "悠閒柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_137",
+    "birthDate": "1988-05-11",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "sushi"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週三晚上",
+      "週二晚上"
+    ],
+    "lat": 25.011675259585957,
+    "lng": 121.46573950149538,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_138",
+    "nickname": "精緻巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_138",
+    "birthDate": "1988-06-10",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "steak",
+      "coffee",
+      "night_market"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週五晚上",
+      "週一晚上"
+    ],
+    "lat": 25.007458373720294,
+    "lng": 121.51402418943356,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_139",
+    "nickname": "自在貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_139",
+    "birthDate": "1998-07-21",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "hotpot",
+      "night_market"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週五晚上",
+      "週一晚上"
+    ],
+    "lat": 24.969041569992434,
+    "lng": 121.54061405104027,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_140",
+    "nickname": "好客薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_140",
+    "birthDate": "1994-08-21",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "steak",
+      "coffee",
+      "korean"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週四晚上",
+      "週六晚上",
+      "週五晚上",
+      "週三晚上",
+      "週日晚上"
+    ],
+    "lat": 25.065820693517104,
+    "lng": 121.48783141050674,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_141",
+    "nickname": "美味貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_141",
+    "birthDate": "1995-09-14",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "ramen"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週日中午",
+      "週五晚上"
+    ],
+    "lat": 25.029946594013833,
+    "lng": 121.54184817218409,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_142",
+    "nickname": "快樂貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_142",
+    "birthDate": "1991-10-16",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "dessert",
+      "vegetarian"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.03062829757994,
+    "lng": 121.5613459530496,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_143",
+    "nickname": "甜蜜荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_143",
+    "birthDate": "1999-11-07",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "izakaya",
+      "thai",
+      "ramen"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週一晚上",
+      "週日晚上",
+      "週三晚上",
+      "週二晚上"
+    ],
+    "lat": 25.066630727377255,
+    "lng": 121.52554731637473,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_144",
+    "nickname": "溫暖巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_144",
+    "birthDate": "1992-12-18",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "thai",
+      "steak"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週二晚上",
+      "週五晚上",
+      "週三晚上"
+    ],
+    "lat": 25.04478050688142,
+    "lng": 121.57979863535101,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_145",
+    "nickname": "香辣焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_145",
+    "birthDate": "2001-01-01",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "hotpot",
+      "sushi",
+      "thai"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週三晚上",
+      "週日晚上",
+      "週四晚上"
+    ],
+    "lat": 25.09982842842117,
+    "lng": 121.52035784698325,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_146",
+    "nickname": "清爽鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_146",
+    "birthDate": "1992-01-25",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "korean"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週五晚上",
+      "週四晚上",
+      "週六中午",
+      "週日中午"
+    ],
+    "lat": 25.03794933988154,
+    "lng": 121.50034223923319,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_147",
+    "nickname": "濃郁咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_147",
+    "birthDate": "1994-03-02",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "brunch",
+      "steak"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週日中午",
+      "週五晚上",
+      "週日晚上",
+      "週六晚上",
+      "週一晚上"
+    ],
+    "lat": 25.011553138106596,
+    "lng": 121.46454342744731,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_148",
+    "nickname": "多彩肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_148",
+    "birthDate": "1995-04-10",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "vegetarian",
+      "coffee",
+      "sushi"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六中午",
+      "週六晚上"
+    ],
+    "lat": 25.011861204081217,
+    "lng": 121.51904004384298,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_149",
+    "nickname": "神秘焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_149",
+    "birthDate": "1994-04-28",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "steak"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週一晚上",
+      "週日中午"
+    ],
+    "lat": 24.968105571968945,
+    "lng": 121.53969061870035,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_150",
+    "nickname": "浪漫草莓",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_150",
+    "birthDate": "1994-05-25",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "hotpot",
+      "ramen"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週三晚上",
+      "週二晚上"
+    ],
+    "lat": 25.063263836914206,
+    "lng": 121.48335053008702,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_151",
+    "nickname": "活潑蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_151",
+    "birthDate": "2000-07-03",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "ramen"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週四晚上",
+      "週日晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.02989914419502,
+    "lng": 121.54029614805897,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_152",
+    "nickname": "沉靜草莓",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_152",
+    "birthDate": "1988-08-06",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "ramen",
+      "dessert",
+      "steak"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週日晚上",
+      "週三晚上",
+      "週五晚上",
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.03592724082945,
+    "lng": 121.56602008736692,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_153",
+    "nickname": "爽朗楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_153",
+    "birthDate": "2001-09-09",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "steak",
+      "ramen",
+      "hotpot"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週二晚上",
+      "週四晚上",
+      "週五晚上"
+    ],
+    "lat": 25.06544111091504,
+    "lng": 121.5220503461454,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_154",
+    "nickname": "細膩柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_154",
+    "birthDate": "1992-09-27",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "vegetarian",
+      "brunch",
+      "korean"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週二晚上",
+      "週日中午"
+    ],
+    "lat": 25.047545700351243,
+    "lng": 121.57911209942493,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_155",
+    "nickname": "獨特荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_155",
+    "birthDate": "1996-11-21",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "sushi"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週六中午",
+      "週日中午",
+      "週五晚上",
+      "週二晚上",
+      "週日晚上"
+    ],
+    "lat": 25.093936509499326,
+    "lng": 121.52963102431502,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_156",
+    "nickname": "歡樂薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_156",
+    "birthDate": "2000-12-15",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "vegetarian"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週日中午",
+      "週三晚上"
+    ],
+    "lat": 25.039255595436785,
+    "lng": 121.49697617319971,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_157",
+    "nickname": "悠閒芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_157",
+    "birthDate": "1996-01-07",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "korean",
+      "night_market",
+      "brunch"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週二晚上",
+      "週六中午",
+      "週六晚上",
+      "週日晚上"
+    ],
+    "lat": 25.009982474933842,
+    "lng": 121.46103752972743,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_158",
+    "nickname": "精緻抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_158",
+    "birthDate": "1997-02-08",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "thai",
+      "ramen",
+      "izakaya"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週三晚上",
+      "週二晚上",
+      "週一晚上",
+      "週六晚上",
+      "週日晚上"
+    ],
+    "lat": 25.010319622254467,
+    "lng": 121.51350534884725,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_159",
+    "nickname": "自在荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_159",
+    "birthDate": "1996-02-20",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "korean",
+      "sushi",
+      "brunch"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週六中午",
+      "週日中午"
+    ],
+    "lat": 24.966135590377263,
+    "lng": 121.53707612030115,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_160",
+    "nickname": "好客肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_160",
+    "birthDate": "1999-04-01",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "brunch"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.06195771287335,
+    "lng": 121.48697048787214,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_161",
+    "nickname": "美味芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_161",
+    "birthDate": "1988-05-14",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "brunch",
+      "dessert"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週三晚上",
+      "週二晚上",
+      "週日中午"
+    ],
+    "lat": 25.0261070273458,
+    "lng": 121.53928091763706,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_162",
+    "nickname": "快樂貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_162",
+    "birthDate": "2001-06-03",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "hotpot",
+      "izakaya"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週一晚上",
+      "週四晚上"
+    ],
+    "lat": 25.03591739575565,
+    "lng": 121.56084330312908,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_163",
+    "nickname": "甜蜜薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_163",
+    "birthDate": "2001-07-19",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "ramen"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週日中午",
+      "週六晚上",
+      "週六中午"
+    ],
+    "lat": 25.06222215493303,
+    "lng": 121.52596339564771,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_164",
+    "nickname": "溫暖香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_164",
+    "birthDate": "1998-08-09",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "brunch",
+      "dessert"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六晚上",
+      "週日晚上",
+      "週六中午",
+      "週一晚上",
+      "週二晚上"
+    ],
+    "lat": 25.053628057694063,
+    "lng": 121.57992272697342,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_165",
+    "nickname": "香辣荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_165",
+    "birthDate": "1993-09-01",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "vegetarian",
+      "sushi",
+      "hotpot"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週三晚上",
+      "週日中午",
+      "週五晚上"
+    ],
+    "lat": 25.09750427259365,
+    "lng": 121.52673288057093,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_166",
+    "nickname": "清爽香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_166",
+    "birthDate": "1989-10-16",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "korean",
+      "hotpot"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週四晚上",
+      "週六中午"
+    ],
+    "lat": 25.03273039967893,
+    "lng": 121.49882358230278,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_167",
+    "nickname": "濃郁薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_167",
+    "birthDate": "1989-11-21",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "dessert",
+      "ramen",
+      "steak"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週一晚上",
+      "週日中午"
+    ],
+    "lat": 25.015638317506294,
+    "lng": 121.46223446065048,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_168",
+    "nickname": "多彩珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_168",
+    "birthDate": "1993-12-01",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "coffee",
+      "steak"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週二晚上",
+      "週三晚上"
+    ],
+    "lat": 25.00794793693116,
+    "lng": 121.51185186767019,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_169",
+    "nickname": "神秘楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_169",
+    "birthDate": "1993-01-15",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "dessert",
+      "sushi"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日中午",
+      "週二晚上"
+    ],
+    "lat": 24.966793371104167,
+    "lng": 121.53852338095801,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_170",
+    "nickname": "浪漫珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_170",
+    "birthDate": "1991-02-06",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "night_market",
+      "korean",
+      "ramen"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日中午",
+      "週六晚上"
+    ],
+    "lat": 25.06317483631568,
+    "lng": 121.48510476136533,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_171",
+    "nickname": "活潑珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_171",
+    "birthDate": "1997-03-16",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "dessert",
+      "brunch",
+      "steak"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.02901225382136,
+    "lng": 121.54017374266824,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_172",
+    "nickname": "沉靜抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_172",
+    "birthDate": "1996-04-18",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "steak",
+      "korean"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週日中午",
+      "週一晚上",
+      "週六晚上",
+      "週日晚上",
+      "週六中午"
+    ],
+    "lat": 25.029612821831368,
+    "lng": 121.56231196464505,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_173",
+    "nickname": "爽朗芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_173",
+    "birthDate": "1999-05-01",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "vegetarian"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週一晚上",
+      "週六晚上"
+    ],
+    "lat": 25.063037302599753,
+    "lng": 121.52658705833136,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_174",
+    "nickname": "細膩抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_174",
+    "birthDate": "1988-06-11",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "hotpot",
+      "steak"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週日晚上",
+      "週六中午"
+    ],
+    "lat": 25.04518435722543,
+    "lng": 121.58042067649029,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_175",
+    "nickname": "獨特香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_175",
+    "birthDate": "1992-07-04",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "izakaya"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週一晚上",
+      "週日晚上",
+      "週六晚上",
+      "週四晚上"
+    ],
+    "lat": 25.092287519352976,
+    "lng": 121.52965112116654,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_176",
+    "nickname": "歡樂柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_176",
+    "birthDate": "1989-07-30",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "brunch"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上"
+    ],
+    "lat": 25.036250721448102,
+    "lng": 121.49574973708344,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_177",
+    "nickname": "悠閒蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_177",
+    "birthDate": "1999-09-14",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "korean",
+      "hotpot",
+      "dessert"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週五晚上",
+      "週二晚上",
+      "週一晚上",
+      "週日中午"
+    ],
+    "lat": 25.01471748771239,
+    "lng": 121.46793628464638,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_178",
+    "nickname": "精緻薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_178",
+    "birthDate": "1989-10-18",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "izakaya"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週三晚上",
+      "週六中午",
+      "週二晚上"
+    ],
+    "lat": 25.014873077922967,
+    "lng": 121.51341823318974,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_179",
+    "nickname": "自在荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_179",
+    "birthDate": "1992-10-23",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "dessert",
+      "izakaya",
+      "brunch"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週日晚上",
+      "週三晚上"
+    ],
+    "lat": 24.965889966423155,
+    "lng": 121.53678118171077,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_180",
+    "nickname": "好客抹茶",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_180",
+    "birthDate": "1995-12-14",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "dessert",
+      "steak",
+      "korean"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週三晚上",
+      "週日中午",
+      "週六中午",
+      "週日晚上"
+    ],
+    "lat": 25.064966871676965,
+    "lng": 121.49089210559102,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_181",
+    "nickname": "美味蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_181",
+    "birthDate": "1991-01-05",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "izakaya",
+      "sushi"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週四晚上",
+      "週二晚上",
+      "週三晚上"
+    ],
+    "lat": 25.027719011038077,
+    "lng": 121.54456307053985,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_182",
+    "nickname": "快樂鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_182",
+    "birthDate": "1992-02-08",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "brunch",
+      "thai",
+      "ramen"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週五晚上",
+      "週三晚上",
+      "週日中午",
+      "週六晚上",
+      "週六中午"
+    ],
+    "lat": 25.028295152529143,
+    "lng": 121.56244669828564,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_183",
+    "nickname": "甜蜜薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_183",
+    "birthDate": "1997-03-01",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "vegetarian",
+      "korean",
+      "izakaya"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週五晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.059789896908683,
+    "lng": 121.52082835722948,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_184",
+    "nickname": "溫暖焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_184",
+    "birthDate": "1995-04-14",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "thai",
+      "hotpot",
+      "vegetarian"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週一晚上",
+      "週三晚上",
+      "週二晚上",
+      "週六晚上",
+      "週日晚上"
+    ],
+    "lat": 25.052382542280014,
+    "lng": 121.57833095751889,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_185",
+    "nickname": "香辣草莓",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_185",
+    "birthDate": "1998-04-21",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "coffee",
+      "korean"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週一晚上",
+      "週五晚上",
+      "週三晚上",
+      "週二晚上"
+    ],
+    "lat": 25.09194295065943,
+    "lng": 121.52768000895624,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_186",
+    "nickname": "清爽薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_186",
+    "birthDate": "1993-06-02",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "coffee"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週二晚上",
+      "週日中午",
+      "週一晚上",
+      "週六中午"
+    ],
+    "lat": 25.039360283912625,
+    "lng": 121.50335170320095,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_187",
+    "nickname": "濃郁栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_187",
+    "birthDate": "1989-07-01",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "vegetarian"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週五晚上",
+      "週三晚上"
+    ],
+    "lat": 25.015693817970806,
+    "lng": 121.45982110495865,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_188",
+    "nickname": "多彩柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_188",
+    "birthDate": "2000-07-26",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "steak",
+      "hotpot",
+      "brunch"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週二晚上",
+      "週六中午",
+      "週三晚上",
+      "週日中午",
+      "週日晚上"
+    ],
+    "lat": 25.014299762058073,
+    "lng": 121.51247421845328,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_189",
+    "nickname": "神秘焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_189",
+    "birthDate": "2001-09-15",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "coffee"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週一晚上",
+      "週日晚上"
+    ],
+    "lat": 24.963210773822386,
+    "lng": 121.53945969359856,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_190",
+    "nickname": "浪漫巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_190",
+    "birthDate": "1999-10-16",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "hotpot",
+      "night_market"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日晚上",
+      "週五晚上",
+      "週四晚上",
+      "週六中午"
+    ],
+    "lat": 25.05671455975063,
+    "lng": 121.48877319584321,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_191",
+    "nickname": "活潑芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_191",
+    "birthDate": "1989-11-01",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "hotpot",
+      "coffee"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週一晚上",
+      "週六中午",
+      "週日中午",
+      "週三晚上",
+      "週日晚上"
+    ],
+    "lat": 25.028348367210942,
+    "lng": 121.54413915226655,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_192",
+    "nickname": "沉靜楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_192",
+    "birthDate": "1997-12-15",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "coffee"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週日中午",
+      "週日晚上",
+      "週四晚上",
+      "週二晚上"
+    ],
+    "lat": 25.03471557772672,
+    "lng": 121.56515697882277,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_193",
+    "nickname": "爽朗栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_193",
+    "birthDate": "1998-01-10",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "hotpot",
+      "night_market",
+      "sushi"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週二晚上",
+      "週六晚上",
+      "週一晚上"
+    ],
+    "lat": 25.061084613919725,
+    "lng": 121.52068640462822,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_194",
+    "nickname": "細膩柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_194",
+    "birthDate": "1996-01-26",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "brunch",
+      "steak"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週五晚上",
+      "週六晚上",
+      "週日晚上",
+      "週四晚上"
+    ],
+    "lat": 25.051616427985486,
+    "lng": 121.57852566920407,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_195",
+    "nickname": "獨特鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_195",
+    "birthDate": "1993-03-11",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "korean"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週六晚上",
+      "週日晚上",
+      "週五晚上"
+    ],
+    "lat": 25.095291480976154,
+    "lng": 121.52786817702699,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_196",
+    "nickname": "歡樂柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_196",
+    "birthDate": "2001-03-31",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "steak",
+      "izakaya",
+      "korean"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週三晚上",
+      "週日晚上",
+      "週六中午",
+      "週六晚上"
+    ],
+    "lat": 25.03703117512772,
+    "lng": 121.4994668941372,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_197",
+    "nickname": "悠閒芝麻",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_197",
+    "birthDate": "1988-05-01",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "brunch"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週三晚上"
+    ],
+    "lat": 25.016577382905872,
+    "lng": 121.46659033826738,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_198",
+    "nickname": "精緻焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_198",
+    "birthDate": "2000-05-27",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "izakaya",
+      "brunch",
+      "coffee"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週六中午",
+      "週日中午",
+      "週二晚上"
+    ],
+    "lat": 25.00997009305982,
+    "lng": 121.51588536649942,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_199",
+    "nickname": "自在咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_199",
+    "birthDate": "1999-06-21",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "vegetarian",
+      "night_market"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週三晚上",
+      "週六晚上",
+      "週二晚上"
+    ],
+    "lat": 24.96400400201371,
+    "lng": 121.5394415628342,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_200",
+    "nickname": "好客貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_200",
+    "birthDate": "1994-08-19",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "dessert",
+      "vegetarian",
+      "steak"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週一晚上",
+      "週日中午",
+      "週三晚上",
+      "週六晚上",
+      "週四晚上"
+    ],
+    "lat": 25.06495586734172,
+    "lng": 121.4892960471632,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_201",
+    "nickname": "美味肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_201",
+    "birthDate": "2000-09-06",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "night_market",
+      "sushi",
+      "hotpot"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週一晚上",
+      "週五晚上"
+    ],
+    "lat": 25.028456901213154,
+    "lng": 121.54170077709202,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_202",
+    "nickname": "快樂貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_202",
+    "birthDate": "2001-10-19",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "hotpot",
+      "dessert"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週一晚上",
+      "週五晚上",
+      "週日中午"
+    ],
+    "lat": 25.03407104462339,
+    "lng": 121.56327447932446,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_203",
+    "nickname": "甜蜜香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_203",
+    "birthDate": "1992-11-20",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "thai",
+      "brunch",
+      "steak"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週日中午",
+      "週六晚上",
+      "週五晚上"
+    ],
+    "lat": 25.066585489358754,
+    "lng": 121.52766736067599,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_204",
+    "nickname": "溫暖鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_204",
+    "birthDate": "1995-12-15",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "izakaya",
+      "dessert"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週四晚上",
+      "週六晚上",
+      "週二晚上",
+      "週日晚上"
+    ],
+    "lat": 25.049250617002603,
+    "lng": 121.57775877916906,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_205",
+    "nickname": "香辣栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_205",
+    "birthDate": "1997-01-01",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "korean",
+      "brunch"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週六中午",
+      "週日中午",
+      "週三晚上",
+      "週五晚上",
+      "週日晚上"
+    ],
+    "lat": 25.090554397858213,
+    "lng": 121.52304038293427,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_206",
+    "nickname": "清爽香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_206",
+    "birthDate": "1993-02-13",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "night_market"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週六晚上",
+      "週五晚上",
+      "週日晚上",
+      "週三晚上"
+    ],
+    "lat": 25.040660501563924,
+    "lng": 121.49578037432953,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_207",
+    "nickname": "濃郁肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_207",
+    "birthDate": "1997-03-04",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "vegetarian",
+      "dessert"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週二晚上",
+      "週三晚上",
+      "週日中午",
+      "週一晚上",
+      "週六中午"
+    ],
+    "lat": 25.010956376496235,
+    "lng": 121.46265886981925,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_208",
+    "nickname": "多彩咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_208",
+    "birthDate": "1993-03-26",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "brunch"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週日晚上",
+      "週二晚上",
+      "週六中午",
+      "週五晚上",
+      "週日中午"
+    ],
+    "lat": 25.01333528134739,
+    "lng": 121.51477451076498,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_209",
+    "nickname": "神秘薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_209",
+    "birthDate": "2000-04-26",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "sushi",
+      "brunch",
+      "ramen"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週六中午",
+      "週日晚上",
+      "週日中午"
+    ],
+    "lat": 24.962803627374115,
+    "lng": 121.54061922571063,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_210",
+    "nickname": "浪漫芒果",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_210",
+    "birthDate": "2000-05-24",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "ramen",
+      "thai",
+      "dessert"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日晚上",
+      "週六晚上",
+      "週四晚上",
+      "週一晚上"
+    ],
+    "lat": 25.06212741009332,
+    "lng": 121.48888249337394,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_211",
+    "nickname": "活潑焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_211",
+    "birthDate": "1996-07-02",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "night_market"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.030195400094613,
+    "lng": 121.53934197318694,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_212",
+    "nickname": "沉靜栗子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_212",
+    "birthDate": "1991-08-05",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "steak",
+      "dessert"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週四晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.037522387986073,
+    "lng": 121.56126849869499,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_213",
+    "nickname": "爽朗薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_213",
+    "birthDate": "1998-09-07",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "night_market",
+      "hotpot"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週日中午",
+      "週六中午",
+      "週日晚上"
+    ],
+    "lat": 25.067426535294857,
+    "lng": 121.52423144195696,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_214",
+    "nickname": "細膩薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_214",
+    "birthDate": "1994-10-15",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "izakaya",
+      "vegetarian"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週六中午",
+      "週四晚上",
+      "週三晚上",
+      "週日中午"
+    ],
+    "lat": 25.04511016275594,
+    "lng": 121.5760334751471,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_215",
+    "nickname": "獨特咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_215",
+    "birthDate": "1990-10-29",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "coffee",
+      "sushi",
+      "brunch"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週三晚上",
+      "週四晚上",
+      "週一晚上",
+      "週日中午",
+      "週二晚上"
+    ],
+    "lat": 25.09486046926118,
+    "lng": 121.52313649155899,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_216",
+    "nickname": "歡樂鳳梨",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_216",
+    "birthDate": "1997-12-19",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "night_market",
+      "dessert"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週二晚上",
+      "週五晚上",
+      "週一晚上",
+      "週日晚上",
+      "週日中午"
+    ],
+    "lat": 25.0354297158788,
+    "lng": 121.50369949073158,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_217",
+    "nickname": "悠閒蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_217",
+    "birthDate": "1990-01-16",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "night_market"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週一晚上",
+      "週六中午",
+      "週日中午",
+      "週五晚上",
+      "週四晚上"
+    ],
+    "lat": 25.013562785914168,
+    "lng": 121.46441354573425,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_218",
+    "nickname": "精緻貓咪",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_218",
+    "birthDate": "1991-02-12",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "izakaya",
+      "thai",
+      "dessert"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週三晚上",
+      "週四晚上",
+      "週五晚上",
+      "週二晚上",
+      "週一晚上"
+    ],
+    "lat": 25.00626941068331,
+    "lng": 121.51103198968805,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_219",
+    "nickname": "自在香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_219",
+    "birthDate": "1989-03-12",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "izakaya",
+      "korean"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週二晚上",
+      "週五晚上",
+      "週三晚上",
+      "週六中午",
+      "週四晚上"
+    ],
+    "lat": 24.969112406552767,
+    "lng": 121.5368227635757,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_220",
+    "nickname": "好客咖啡豆",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_220",
+    "birthDate": "1996-03-28",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "korean",
+      "coffee",
+      "thai"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週一晚上",
+      "週日中午",
+      "週三晚上"
+    ],
+    "lat": 25.06017150719557,
+    "lng": 121.48981976524182,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_221",
+    "nickname": "美味薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_221",
+    "birthDate": "1999-04-30",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "dessert",
+      "night_market",
+      "thai"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週四晚上",
+      "週六中午",
+      "週三晚上",
+      "週日晚上"
+    ],
+    "lat": 25.026138103340287,
+    "lng": 121.5428091086792,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_222",
+    "nickname": "快樂柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_222",
+    "birthDate": "1988-06-12",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "brunch"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週二晚上",
+      "週一晚上",
+      "週六晚上",
+      "週日晚上",
+      "週五晚上"
+    ],
+    "lat": 25.037132362499367,
+    "lng": 121.562819737026,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_223",
+    "nickname": "甜蜜楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_223",
+    "birthDate": "1988-06-26",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "korean",
+      "brunch"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週一晚上",
+      "週日晚上",
+      "週四晚上"
+    ],
+    "lat": 25.059261694567745,
+    "lng": 121.52965141949477,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_224",
+    "nickname": "溫暖荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_224",
+    "birthDate": "1992-07-23",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "sushi",
+      "thai",
+      "izakaya"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週日中午",
+      "週四晚上"
+    ],
+    "lat": 25.051272250973618,
+    "lng": 121.5739982098476,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_225",
+    "nickname": "香辣楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_225",
+    "birthDate": "1996-08-31",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "coffee",
+      "steak"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週四晚上",
+      "週二晚上",
+      "週日晚上",
+      "週六晚上",
+      "週六中午"
+    ],
+    "lat": 25.094091928559354,
+    "lng": 121.52103740048595,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_226",
+    "nickname": "清爽蜂蜜",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_226",
+    "birthDate": "1995-10-13",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "vegetarian"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週六中午",
+      "週日中午",
+      "週六晚上",
+      "週日晚上",
+      "週一晚上"
+    ],
+    "lat": 25.035559426414782,
+    "lng": 121.49820107340207,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_227",
+    "nickname": "濃郁楓糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_227",
+    "birthDate": "1991-11-21",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "sushi",
+      "dessert"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週六中午",
+      "週六晚上",
+      "週一晚上",
+      "週三晚上"
+    ],
+    "lat": 25.018652329289818,
+    "lng": 121.4626882951376,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_228",
+    "nickname": "多彩珍珠",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_228",
+    "birthDate": "1989-12-06",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "thai"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週六中午",
+      "週三晚上",
+      "週四晚上",
+      "週日晚上"
+    ],
+    "lat": 25.00650423583575,
+    "lng": 121.51663222806994,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_229",
+    "nickname": "神秘柚子",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_229",
+    "birthDate": "1995-01-09",
+    "zodiacSign": "摩羯座",
+    "zodiacElement": "earth",
+    "bio": "喜歡在週末探索台北的小巷，尋找隱藏版美食。",
+    "vibePrompt": "如果你也喜歡在雨天窩在咖啡廳，我們應該很合",
+    "foodPreferences": [
+      "ramen",
+      "hotpot"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週五晚上",
+      "週六中午",
+      "週二晚上",
+      "週日晚上"
+    ],
+    "lat": 24.9639081913284,
+    "lng": 121.5378198302458,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_230",
+    "nickname": "浪漫巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_230",
+    "birthDate": "1992-02-17",
+    "zodiacSign": "水瓶座",
+    "zodiacElement": "air",
+    "bio": "下班後最愛找朋友吃吃喝喝，享受輕鬆的夜晚。",
+    "vibePrompt": "想找人一起去試試最近很紅的那家拉麵",
+    "foodPreferences": [
+      "hotpot",
+      "vegetarian",
+      "dessert"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週四晚上",
+      "週五晚上",
+      "週日中午",
+      "週三晚上"
+    ],
+    "lat": 25.05782028993033,
+    "lng": 121.4890810801643,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_231",
+    "nickname": "活潑薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_231",
+    "birthDate": "1997-03-03",
+    "zodiacSign": "雙魚座",
+    "zodiacElement": "water",
+    "bio": "對食物充滿熱情，相信吃飯是認識彼此最好的方式。",
+    "vibePrompt": "週末想去夜市亂逛，你有興趣嗎？",
+    "foodPreferences": [
+      "coffee",
+      "steak",
+      "ramen"
+    ],
+    "preferredArea": "大安",
+    "availableSlots": [
+      "週六中午",
+      "週一晚上",
+      "週三晚上",
+      "週四晚上"
+    ],
+    "lat": 25.025332049316727,
+    "lng": 121.53856318903343,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_232",
+    "nickname": "沉靜薰衣草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_232",
+    "birthDate": "1994-04-10",
+    "zodiacSign": "牡羊座",
+    "zodiacElement": "fire",
+    "bio": "熱愛嘗試各種料理，從街頭小吃到精緻餐廳都行。",
+    "vibePrompt": "找一個能陪我吃到關店的人",
+    "foodPreferences": [
+      "dessert",
+      "ramen",
+      "izakaya",
+      "korean"
+    ],
+    "preferredArea": "信義",
+    "availableSlots": [
+      "週日晚上",
+      "週四晚上",
+      "週六晚上"
+    ],
+    "lat": 25.036850273718127,
+    "lng": 121.56625677123432,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_233",
+    "nickname": "爽朗薑黃",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_233",
+    "birthDate": "1991-05-19",
+    "zodiacSign": "金牛座",
+    "zodiacElement": "earth",
+    "bio": "覺得一起吃飯比任何破冰遊戲都有效。",
+    "vibePrompt": "喜歡在用餐時聊天多過滑手機的人",
+    "foodPreferences": [
+      "izakaya",
+      "thai"
+    ],
+    "preferredArea": "中山",
+    "availableSlots": [
+      "週六晚上",
+      "週一晚上",
+      "週四晚上"
+    ],
+    "lat": 25.06617190383468,
+    "lng": 121.5201368677942,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_234",
+    "nickname": "細膩香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_234",
+    "birthDate": "1993-05-29",
+    "zodiacSign": "雙子座",
+    "zodiacElement": "air",
+    "bio": "週末的計畫永遠從「要去哪裡吃？」開始。",
+    "vibePrompt": "想找人一起探索台北的美食地圖",
+    "foodPreferences": [
+      "vegetarian",
+      "ramen"
+    ],
+    "preferredArea": "松山",
+    "availableSlots": [
+      "週日中午",
+      "週三晚上",
+      "週六中午",
+      "週日晚上",
+      "週一晚上"
+    ],
+    "lat": 25.051954461821353,
+    "lng": 121.57626438672142,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_235",
+    "nickname": "獨特薄荷",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_235",
+    "birthDate": "1995-07-17",
+    "zodiacSign": "巨蟹座",
+    "zodiacElement": "water",
+    "bio": "相信好食物能帶來好心情，也能帶來好緣分。",
+    "vibePrompt": "如果你的冰箱裡永遠有點心，我們一定聊得來",
+    "foodPreferences": [
+      "steak",
+      "thai"
+    ],
+    "preferredArea": "士林",
+    "availableSlots": [
+      "週四晚上",
+      "週六中午",
+      "週五晚上"
+    ],
+    "lat": 25.090481621483338,
+    "lng": 121.52632978558773,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_236",
+    "nickname": "歡樂荔枝",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_236",
+    "birthDate": "1993-08-20",
+    "zodiacSign": "獅子座",
+    "zodiacElement": "fire",
+    "bio": "尋找一個能陪我吃遍台北的夥伴。",
+    "vibePrompt": "尋找能接受我突然想吃火鍋的夥伴",
+    "foodPreferences": [
+      "night_market",
+      "steak"
+    ],
+    "preferredArea": "萬華",
+    "availableSlots": [
+      "週四晚上",
+      "週日晚上",
+      "週五晚上",
+      "週三晚上",
+      "週二晚上"
+    ],
+    "lat": 25.037844470184297,
+    "lng": 121.50069900940265,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_237",
+    "nickname": "悠閒焦糖",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_237",
+    "birthDate": "1989-08-29",
+    "zodiacSign": "處女座",
+    "zodiacElement": "earth",
+    "bio": "食物是我的語言，每道菜都有故事。",
+    "vibePrompt": "週末想來個早午餐約會，不限地點",
+    "foodPreferences": [
+      "brunch",
+      "dessert",
+      "korean",
+      "izakaya"
+    ],
+    "preferredArea": "板橋",
+    "availableSlots": [
+      "週四晚上",
+      "週六中午"
+    ],
+    "lat": 25.01196795690665,
+    "lng": 121.46043048651376,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_238",
+    "nickname": "精緻香草",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_238",
+    "birthDate": "1995-10-19",
+    "zodiacSign": "天秤座",
+    "zodiacElement": "air",
+    "bio": "喜歡發現城市裡被遺忘的老店和新興的美食亮點。",
+    "vibePrompt": "一起去吃那家排了很久的壽司吧",
+    "foodPreferences": [
+      "thai",
+      "ramen"
+    ],
+    "preferredArea": "永和",
+    "availableSlots": [
+      "週五晚上",
+      "週六中午",
+      "週日晚上",
+      "週日中午",
+      "週六晚上"
+    ],
+    "lat": 25.005346666800325,
+    "lng": 121.51554186244495,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_239",
+    "nickname": "自在肉桂",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_239",
+    "birthDate": "2000-10-30",
+    "zodiacSign": "天蠍座",
+    "zodiacElement": "water",
+    "bio": "每個週末都是一次新的美食冒險。",
+    "vibePrompt": "找個能陪我試遍台北居酒屋的人",
+    "foodPreferences": [
+      "korean",
+      "brunch"
+    ],
+    "preferredArea": "新店",
+    "availableSlots": [
+      "週二晚上",
+      "週五晚上",
+      "週三晚上"
+    ],
+    "lat": 24.964209066131616,
+    "lng": 121.545116419435,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  },
+  {
+    "id": "user_240",
+    "nickname": "好客巧克力",
+    "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=user_240",
+    "birthDate": "1997-11-25",
+    "zodiacSign": "射手座",
+    "zodiacElement": "fire",
+    "bio": "不管心情好壞，美食總能讓我重新充電。",
+    "vibePrompt": "想找愛吃辣的夥伴一起挑戰泰式料理",
+    "foodPreferences": [
+      "sushi",
+      "thai",
+      "brunch"
+    ],
+    "preferredArea": "三重",
+    "availableSlots": [
+      "週日晚上",
+      "週六中午",
+      "週二晚上",
+      "週四晚上"
+    ],
+    "lat": 25.062824405570513,
+    "lng": 121.4898910860503,
+    "locationPrecision": "area",
+    "safetyNote": "此地點為約會建議區域，非真實住址",
+    "createdAt": "2025-12-31T16:00:00.000Z"
+  }
+]
