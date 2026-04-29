@@ -2,88 +2,122 @@
 
 > 不要先想怎麼聊天，先從一起吃什麼開始。
 
-A food-first dating MVP built with Next.js, TypeScript, and GCP. Interview project for a Vibe Coding Engineer role.
+A food-first dating MVP built as an interview project for a Vibe Coding Engineer / Next.js / Node.js role.
 
 ---
 
-## Product Overview
+## Product Concept
 
-TasteMap Date reduces first-date pressure by starting the connection with shared food preferences instead of swiping or awkward chat. Users browse a taste map, see match scores, generate AI invite suggestions, and send low-pressure date requests.
+Most dating apps start with profile photos and awkward small talk.  
+TasteMap Date starts with food — a low-pressure shared interest that naturally leads to a real date invitation.
 
-**Core features:**
-- Food preference matching (12 categories)
-- Approximate dating area map (Leaflet, no exact addresses)
-- Zodiac element affinity scoring
-- AI-generated invite suggestions (Anthropic Claude, with fallback)
-- Date request accept / reject inbox
+**Core user flow:**
+1. Create a taste profile (food preferences + dating area + vibe)
+2. Browse a map of users who share your food taste
+3. See an explainable match score (food, zodiac, location, availability, vibe)
+4. Generate an AI-assisted invite suggestion
+5. Send a date request — receiver can accept or reject
 
 ---
 
 ## Tech Stack
 
-| Layer | Tech |
-|-------|------|
-| Frontend | Next.js 16 App Router, TypeScript, Tailwind CSS, shadcn/ui |
-| Map | Leaflet / React Leaflet (SSR disabled) |
+| Layer | Choice |
+|---|---|
+| Frontend | Next.js 16 App Router + TypeScript + Tailwind CSS |
+| UI Components | shadcn/ui (base-ui) + lucide-react |
+| Map | Leaflet + React Leaflet |
 | Forms | React Hook Form + Zod |
-| State | Zustand |
-| AI | Anthropic Claude API (`claude-haiku-4-5-20251001`) |
-| Storage | localStorage (local mode) / Firestore (optional) |
-| Deploy | GCP Cloud Run |
+| State | React useState (Zustand available if needed) |
+| AI | Anthropic Claude Haiku API + deterministic fallback |
+| Storage | localStorage (adapter-based, Firestore-ready) |
+| Deploy | GCP Cloud Run + Artifact Registry |
 | CI/CD | GitHub Actions + Workload Identity Federation |
-| Registry | Artifact Registry |
 | Secrets | GCP Secret Manager |
+| Testing | Vitest + Playwright |
+
+---
+
+## Architecture
+
+```
+tastemap-date/
+├── src/
+│   ├── app/                    # Next.js App Router pages + API routes
+│   │   ├── page.tsx            # Landing page
+│   │   ├── onboarding/         # Profile creation
+│   │   ├── map/                # Taste map + candidate selection
+│   │   ├── inbox/              # Date request inbox
+│   │   └── api/
+│   │       ├── profiles/       # GET mock users (filter by food/area/zodiac)
+│   │       ├── match-advice/   # POST AI invite suggestion
+│   │       └── date-requests/  # GET/POST/PATCH (Firestore mode)
+│   ├── features/
+│   │   ├── zodiac/             # calculateZodiac() pure function
+│   │   ├── matching/           # calculateMatchScore() pure function
+│   │   └── date-requests/      # DateRequestStore interface + localStorage impl
+│   ├── lib/
+│   │   ├── ai/                 # generateInviteAdvice() + fallback
+│   │   └── firestore.server.ts # firebase-admin init (Firestore mode)
+│   ├── components/             # CandidateCard, MatchReasonPanel, DateRequestDialog, etc.
+│   ├── data/                   # mock-users.generated.json + food-types + taipei-districts
+│   └── types/                  # domain.ts (UserProfile, DateRequest, MatchScoreBreakdown)
+├── docs/
+│   ├── gcp-deploy.md           # Step-by-step GCP setup
+│   └── demo-script.md          # 3-minute demo walkthrough
+├── tests/e2e/                  # Playwright e2e tests
+├── Dockerfile                  # Multi-stage, Cloud Run ready (port 8080)
+└── .github/workflows/          # CI: test → build → push → deploy
+```
+
+**Match score formula:**
+```
+totalScore = food(40%) + zodiac(20%) + location(20%) + availability(10%) + vibe(10%)
+```
+
+**Storage adapter pattern:**
+```ts
+interface DateRequestStore {
+  create(input): Promise<DateRequest>
+  listByReceiver(receiverId): Promise<DateRequest[]>
+  updateStatus(id, status): Promise<DateRequest>
+}
+// local mode  → browserLocalDateRequestStore (localStorage)
+// cloud mode  → firestoreDateRequestStore (firebase-admin)
+```
 
 ---
 
 ## Local Setup
 
 ```bash
-git clone <repo>
 cd tastemap-date
 npm install
-cp .env.example .env.local
-# optionally add ANTHROPIC_API_KEY to .env.local
-npm run generate:mock-users
-npm run dev
+npm run generate:mock-users   # generates src/data/mock-users.generated.json
+cp .env.example .env.local    # add ANTHROPIC_API_KEY if available
+npm run dev                   # http://localhost:3000
 ```
-
-Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## Environment Variables
 
-| Variable | Description |
-|----------|-------------|
-| `NEXT_PUBLIC_APP_ENV` | `development` or `production` |
-| `NEXT_PUBLIC_STORAGE_MODE` | `local` or `firestore` |
-| `STORAGE_MODE` | `local` or `firestore` (server-side) |
-| `ANTHROPIC_API_KEY` | Optional — AI invite suggestions |
-| `GOOGLE_CLOUD_PROJECT` | Required for Firestore mode |
+| Variable | Required | Description |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | No | Claude Haiku for invite suggestions. Falls back gracefully if missing. |
+| `NEXT_PUBLIC_STORAGE_MODE` | No | `local` (default) or `firestore` |
+| `STORAGE_MODE` | No | Server-side: `local` or `firestore` |
+| `GOOGLE_CLOUD_PROJECT` | Firestore only | GCP project ID |
 
 ---
 
-## Mock Data Generation
+## Mock Data
+
+240 deterministic users generated with a seeded random function.  
+Each user has: food preferences, zodiac, approximate dating area (jittered coordinates — no exact addresses), available slots, and a vibe prompt.
 
 ```bash
 npm run generate:mock-users
-```
-
-Generates 240 deterministic mock users into `src/data/mock-users.generated.json`. Uses a fixed seed — output is always identical.
-
----
-
-## Scripts
-
-```bash
-npm run dev                 # Start dev server
-npm run build               # Production build
-npm run typecheck           # TypeScript check
-npm run generate:mock-users # Generate 240 mock users
-npm run test                # Vitest unit tests
-npm run test:watch          # Vitest watch mode
-npm run e2e                 # Playwright e2e tests
 ```
 
 ---
@@ -91,54 +125,59 @@ npm run e2e                 # Playwright e2e tests
 ## Testing
 
 ```bash
-npm run test       # Unit tests (zodiac, match scoring, date request)
-npm run typecheck  # TypeScript validation
-npm run e2e        # End-to-end happy path
+npm run test        # Vitest unit tests (zodiac, matching, storage, AI fallback)
+npm run typecheck   # TypeScript
+npm run build       # Next.js production build
+
+# E2E (requires running dev server)
+npx playwright install
+npm run e2e
 ```
 
 ---
 
-## Architecture
+## GCP Deploy
 
-See [docs/architecture.md](docs/architecture.md) for full details.
+See [docs/gcp-deploy.md](docs/gcp-deploy.md) for full setup.
 
-**Key decisions:**
-- Mock users in JSON — no DB needed for read-only profiles
-- Match score is a pure function (explainable, testable, no AI dependency)
-- AI is copy generation only — not in the matching decision path
-- `DateRequestStore` adapter — swap localStorage → Firestore with one env var
-- Cloud Run + Workload Identity Federation — no long-lived GCP keys
+**Quick deploy (after GCP setup):**
+```bash
+docker build -t asia-east1-docker.pkg.dev/PROJECT_ID/tastemap-date/tastemap-date-web:latest .
+docker push asia-east1-docker.pkg.dev/PROJECT_ID/tastemap-date/tastemap-date-web:latest
+gcloud run deploy tastemap-date-web \
+  --image=asia-east1-docker.pkg.dev/PROJECT_ID/tastemap-date/tastemap-date-web:latest \
+  --region=asia-east1 \
+  --allow-unauthenticated \
+  --set-secrets="ANTHROPIC_API_KEY=ANTHROPIC_API_KEY:latest"
+```
+
+**CI/CD:** Push to `main` → GitHub Actions runs tests → builds Docker image → pushes to Artifact Registry → deploys to Cloud Run. Uses Workload Identity Federation (no long-lived service account keys).
 
 ---
 
-## GCP Deployment
+## Design Tradeoffs
 
-See [docs/gcp-deploy.md](docs/gcp-deploy.md) for full GCP setup instructions.
-
-**CI/CD auto-deploys on push to main via GitHub Actions.**
+| Decision | Reasoning |
+|---|---|
+| localStorage first | Zero infra for demo; Firestore adapter is a clean swap when needed |
+| AI is optional | Demo stability > feature completeness; fallback text is still good UX |
+| 240 JSON mock users | No DB required; deterministic = reproducible demo |
+| Match score = pure function | Explainable, testable, fast — no AI black box for core logic |
+| Jittered coordinates only | Privacy by design — never shows exact home address |
+| Next.js standalone output | Required for minimal Cloud Run container size |
 
 ---
 
 ## Safety & Privacy
 
-- No exact home addresses — all coordinates are approximate area centers + random jitter
-- Location UI labels say "推薦約會區域" not "住家位置"
-- No real user PII in mock data
-- AI suggestions are low-pressure copy — no compatibility claims
+- No real user data is collected
+- Location data is approximate (area-level, ±500m jitter)
+- All "users" are deterministic mock data
+- AI-generated messages are suggestions only — user edits before sending
+- No persistent auth — demo profile stored in localStorage
 
 ---
 
 ## Demo Script
 
-See [docs/demo-script.md](docs/demo-script.md) for the 3-minute interview demo flow.
-
----
-
-## Tradeoffs
-
-| Decision | Tradeoff |
-|----------|----------|
-| Mock users in JSON | Fast demo, no DB ops — but not real user data |
-| localStorage for date requests | Zero backend dependency — but data doesn't persist across devices |
-| Rule-based match score | Explainable and testable — but less personalized than ML |
-| Cloud Run over Vercel | GCP-native, no vendor lock-in — but more setup required |
+See [docs/demo-script.md](docs/demo-script.md) for the 3-minute walkthrough.
