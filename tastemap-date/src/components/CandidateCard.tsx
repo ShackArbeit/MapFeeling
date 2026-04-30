@@ -60,8 +60,23 @@ export function CandidateCard({ user, viewerProfile }: Props) {
           candidateVibe: user.vibePrompt,
         }),
       });
+      if (!res.ok) throw new Error(`API error ${res.status}`);
       const data = (await res.json()) as AdviceOutput;
-      setAdvice(data);
+      if (data.reason && data.suggestedMessage) {
+        setAdvice(data);
+      }
+    } catch {
+      // API 失敗時使用本地 fallback，讓流程仍可繼續
+      const sharedFoodTypes = viewerProfile.foodPreferences.filter((f) =>
+        user.foodPreferences.includes(f)
+      );
+      const label = sharedFoodTypes[0]
+        ? FOOD_TYPE_LABELS[sharedFoodTypes[0]]
+        : "美食";
+      setAdvice({
+        reason: `你們都對相同的飲食風格有興趣，互動偏好適合從輕鬆的餐飲邀約開始。`,
+        suggestedMessage: `我看到你也喜歡 ${label}，要不要找個週末午後一起去試試？`,
+      });
     } finally {
       setLoadingAdvice(false);
     }

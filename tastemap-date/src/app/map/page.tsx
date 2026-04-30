@@ -19,17 +19,18 @@ export default function MapPage() {
   const [users, setUsers] = useState<UserProfile[]>([]);
   const [selectedFood, setSelectedFood] = useState<FoodType | null>(null);
   const [selectedUser, setSelectedUser] = useState<UserProfile | null>(null);
-  const [viewerProfile] = useState<UserProfile | null>(() => {
-    if (typeof window === "undefined") return null;
-    const stored = window.localStorage.getItem("tastemap.viewerProfile");
-    if (!stored) return null;
-    try {
-      return JSON.parse(stored) as UserProfile;
-    } catch {
-      return null;
-    }
-  });
+  const [viewerProfile, setViewerProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("tastemap.viewerProfile");
+    if (!stored) return;
+    try {
+      setViewerProfile(JSON.parse(stored) as UserProfile);
+    } catch {
+      // corrupted data, ignore
+    }
+  }, []);
 
   useEffect(() => {
     function onPopState() {

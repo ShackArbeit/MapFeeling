@@ -27,17 +27,18 @@ const STATUS_COLORS: Record<DateRequestStatus, string> = {
 
 export default function InboxPage() {
   const [requests, setRequests] = useState<DateRequest[]>([]);
-  const [viewerProfile] = useState<UserProfile | null>(() => {
-    if (typeof window === "undefined") return null;
-    const stored = window.localStorage.getItem("tastemap.viewerProfile");
-    if (!stored) return null;
-    try {
-      return JSON.parse(stored) as UserProfile;
-    } catch {
-      return null;
-    }
-  });
+  const [viewerProfile, setViewerProfile] = useState<UserProfile | null>(null);
   const [receiverId] = useState(DEMO_RECEIVER_ID);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("tastemap.viewerProfile");
+    if (!stored) return;
+    try {
+      setViewerProfile(JSON.parse(stored) as UserProfile);
+    } catch {
+      // corrupted data, ignore
+    }
+  }, []);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
