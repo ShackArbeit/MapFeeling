@@ -134,15 +134,17 @@ export default function MapPage() {
         </div>
 
         {activeSelectedUser && (
-          <div className="glass-panel relative z-[500] m-3 ml-0 flex w-80 shrink-0 flex-col overflow-y-auto rounded-[1.75rem] border-white/10 bg-slate-950/82">
+          <div className="glass-panel relative z-[500] m-3 ml-0 flex w-80 shrink-0 flex-col overflow-hidden rounded-[1.75rem] border-white/10 bg-slate-950/82">
             <button
-              className="self-end px-4 pt-4 text-sm text-stone-400 hover:text-stone-100"
+              className="shrink-0 self-end px-4 pt-4 text-sm text-stone-400 hover:text-stone-100"
               onClick={() => setSelectedUser(null)}
             >
               Close
             </button>
-            <CandidateCard user={activeSelectedUser} viewerProfile={viewerProfile} />
-            <MatchReasonPanel user={activeSelectedUser} viewerProfile={viewerProfile} />
+            <div className="min-h-0 flex-1 overflow-y-auto pb-4">
+              <CandidateCard user={activeSelectedUser} viewerProfile={viewerProfile} />
+              <MatchReasonPanel user={activeSelectedUser} viewerProfile={viewerProfile} />
+            </div>
           </div>
         )}
       </div>
