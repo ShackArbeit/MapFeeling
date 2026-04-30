@@ -1,11 +1,13 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Suspense, useState, useEffect } from "react";
-import type { UserProfile, FoodType } from "@/types/domain";
+import { Suspense, useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import type { FoodType, UserProfile } from "@/types/domain";
 import { FoodTagFilter } from "@/components/FoodTagFilter";
 import { CandidateCard } from "@/components/CandidateCard";
 import { MatchReasonPanel } from "@/components/MatchReasonPanel";
+import { clearUserSession } from "@/lib/session";
 
 const TasteMap = dynamic(
   () => import("@/components/TasteMap").then((m) => m.TasteMap),
@@ -13,28 +15,37 @@ const TasteMap = dynamic(
 );
 
 export default function MapPage() {
+  const router = useRouter();
   const [users, setUsers] = useState<UserProfile[]>([]);
   const [selectedFood, setSelectedFood] = useState<FoodType | null>(null);
   const [selectedUser, setSelectedUser] = useState<UserProfile | null>(null);
-  const [viewerProfile, setViewerProfile] = useState<UserProfile | null>(null);
+  const [viewerProfile] = useState<UserProfile | null>(() => {
+    if (typeof window === "undefined") return null;
+    const stored = window.localStorage.getItem("tastemap.viewerProfile");
+    if (!stored) return null;
+    try {
+      return JSON.parse(stored) as UserProfile;
+    } catch {
+      return null;
+    }
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem("tastemap.viewerProfile");
-    if (stored) {
-      try {
-        setViewerProfile(JSON.parse(stored) as UserProfile);
-      } catch {
-        // ignore invalid stored data
-      }
+    function onPopState() {
+      clearUserSession();
     }
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
-  useEffect(() => {
-    setSelectedUser(null);
-    setLoading(true);
+  function handleReset() {
+    clearUserSession();
+    router.push("/");
+  }
 
-    const qs = new URLSearchParams({ limit: "120" });
+  useEffect(() => {
+    const qs = new URLSearchParams({ limit: "240" });
     if (selectedFood) qs.set("foodType", selectedFood);
 
     fetch(`/api/profiles?${qs}`)
@@ -46,60 +57,91 @@ export default function MapPage() {
       .finally(() => setLoading(false));
   }, [selectedFood]);
 
+  // When no tag is selected, narrow to users who share at least one food type with the viewer.
+  // When a tag is selected, the API already filters — show all results freely.
+  const displayedUsers = useMemo(() => {
+    if (selectedFood) return users;
+    if (!viewerProfile?.foodPreferences.length) return users;
+    return users.filter((u) =>
+      u.foodPreferences.some((f) => viewerProfile.foodPreferences.includes(f))
+    );
+  }, [users, selectedFood, viewerProfile]);
+
+  const activeSelectedUser = useMemo(() => {
+    if (!selectedUser) return null;
+    return users.find((user) => user.id === selectedUser.id) ?? null;
+  }, [selectedUser, users]);
+
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
-      <header className="bg-white border-b px-4 py-2 flex items-center gap-4 shrink-0">
-        <span className="font-bold text-orange-500 shrink-0">食感航線</span>
+    <div className="page-shell flex h-screen flex-col overflow-hidden">
+      <header className="relative z-[500] flex shrink-0 items-center gap-4 border-b border-white/10 bg-slate-950/72 px-4 py-3 backdrop-blur-xl">
+        <span className="shrink-0 font-heading text-2xl text-amber-100">TasteMap</span>
         <div className="flex-1 overflow-x-auto">
           <FoodTagFilter selected={selectedFood} onSelect={setSelectedFood} />
         </div>
-        {viewerProfile && (
-          <div className="flex items-center gap-2 shrink-0">
-            <img
-              src={viewerProfile.avatarUrl}
-              alt={viewerProfile.nickname}
-              className="w-7 h-7 rounded-full border border-orange-200"
-            />
-            <span className="text-sm font-medium hidden sm:block">
-              {viewerProfile.nickname}
-            </span>
-          </div>
-        )}
+        <div className="flex shrink-0 items-center gap-3">
+          {viewerProfile && (
+            <>
+              <img
+                src={viewerProfile.avatarUrl}
+                alt={viewerProfile.nickname}
+                className="h-8 w-8 rounded-full border border-amber-200/40"
+              />
+              <span className="hidden text-sm font-medium text-stone-200 sm:block">
+                {viewerProfile.nickname}
+              </span>
+            </>
+          )}
+          <button
+            onClick={handleReset}
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-stone-400 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-stone-200"
+          >
+            Reset
+          </button>
+        </div>
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <div className="flex-1 relative">
+        <div className="relative flex-1">
+          <div className="pointer-events-none absolute inset-x-4 top-4 z-[450] flex justify-between">
+            <div className="rounded-full border border-white/10 bg-slate-950/70 px-4 py-2 text-xs uppercase tracking-[0.24em] text-stone-300 backdrop-blur">
+              Taipei Taste Atlas
+            </div>
+            <div className="rounded-full border border-amber-200/15 bg-amber-300/10 px-4 py-2 text-xs text-amber-100 backdrop-blur">
+              {displayedUsers.length} profiles
+            </div>
+          </div>
           {loading ? (
-            <div className="flex h-full items-center justify-center text-gray-400">
-              載入中…
+            <div className="flex h-full items-center justify-center text-stone-400">
+              Loading map...
             </div>
           ) : (
             <Suspense
               fallback={
-                <div className="flex h-full items-center justify-center text-gray-400">
-                  地圖載入中…
+                <div className="flex h-full items-center justify-center text-stone-400">
+                  Preparing map...
                 </div>
               }
             >
               <TasteMap
-                users={users}
-                selectedUserId={selectedUser?.id ?? null}
+                users={displayedUsers}
+                selectedUserId={activeSelectedUser?.id ?? null}
                 onSelectUser={setSelectedUser}
               />
             </Suspense>
           )}
         </div>
 
-        {selectedUser && (
-          <div className="w-72 flex flex-col border-l bg-white overflow-y-auto shrink-0">
+        {activeSelectedUser && (
+          <div className="glass-panel relative z-[500] m-3 ml-0 flex w-80 shrink-0 flex-col overflow-y-auto rounded-[1.75rem] border-white/10 bg-slate-950/82">
             <button
-              className="self-end text-gray-400 hover:text-gray-600 px-4 pt-3 text-sm"
+              className="self-end px-4 pt-4 text-sm text-stone-400 hover:text-stone-100"
               onClick={() => setSelectedUser(null)}
             >
-              ✕ 關閉
+              Close
             </button>
-            <CandidateCard user={selectedUser} viewerProfile={viewerProfile} />
-            <MatchReasonPanel user={selectedUser} viewerProfile={viewerProfile} />
+            <CandidateCard user={activeSelectedUser} viewerProfile={viewerProfile} />
+            <MatchReasonPanel user={activeSelectedUser} viewerProfile={viewerProfile} />
           </div>
         )}
       </div>

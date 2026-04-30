@@ -1,61 +1,67 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { browserLocalDateRequestStore } from "@/features/date-requests/browserLocalDateRequestStore";
-import type { DateRequest, DateRequestStatus, UserProfile } from "@/types/domain";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { FOOD_TYPE_LABELS } from "@/data/food-types";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import mockUsersJson from "@/data/mock-users.generated.json";
+import { FOOD_TYPE_LABELS } from "@/data/food-types";
+import { browserLocalDateRequestStore } from "@/features/date-requests/browserLocalDateRequestStore";
+import type { DateRequest, DateRequestStatus, UserProfile } from "@/types/domain";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ALL_USERS = mockUsersJson as UserProfile[];
 const DEMO_RECEIVER_ID = "mock-user-2";
 
 const STATUS_LABELS: Record<DateRequestStatus, string> = {
-  pending: "待回應",
+  pending: "待回覆",
   accepted: "已接受",
-  rejected: "已拒絕",
+  rejected: "已婉拒",
 };
 
 const STATUS_COLORS: Record<DateRequestStatus, string> = {
-  pending: "bg-yellow-100 text-yellow-800 border-yellow-200",
-  accepted: "bg-green-100 text-green-800 border-green-200",
-  rejected: "bg-gray-100 text-gray-500 border-gray-200",
+  pending: "bg-yellow-300/12 text-yellow-100 border-yellow-200/20",
+  accepted: "bg-emerald-300/12 text-emerald-100 border-emerald-200/20",
+  rejected: "bg-white/8 text-stone-300 border-white/10",
 };
 
 export default function InboxPage() {
   const [requests, setRequests] = useState<DateRequest[]>([]);
-  const [viewerProfile, setViewerProfile] = useState<UserProfile | null>(null);
-  const [receiverId, setReceiverId] = useState(DEMO_RECEIVER_ID);
+  const [viewerProfile] = useState<UserProfile | null>(() => {
+    if (typeof window === "undefined") return null;
+    const stored = window.localStorage.getItem("tastemap.viewerProfile");
+    if (!stored) return null;
+    try {
+      return JSON.parse(stored) as UserProfile;
+    } catch {
+      return null;
+    }
+  });
+  const [receiverId] = useState(DEMO_RECEIVER_ID);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem("tastemap.viewerProfile");
-    if (stored) {
-      try {
-        setViewerProfile(JSON.parse(stored) as UserProfile);
-      } catch {
-        // ignore
-      }
-    }
-  }, []);
+    let active = true;
 
-  const loadRequests = useCallback(async () => {
-    setLoading(true);
-    const items = await browserLocalDateRequestStore.listByReceiver(receiverId);
-    setRequests(items.sort((a, b) => b.createdAt.localeCompare(a.createdAt)));
-    setLoading(false);
+    browserLocalDateRequestStore
+      .listByReceiver(receiverId)
+      .then((items) => {
+        if (!active) return;
+        setRequests(items.sort((a, b) => b.createdAt.localeCompare(a.createdAt)));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+
+    return () => {
+      active = false;
+    };
   }, [receiverId]);
-
-  useEffect(() => {
-    void loadRequests();
-  }, [loadRequests]);
 
   async function handleUpdateStatus(id: string, status: DateRequestStatus) {
     await browserLocalDateRequestStore.updateStatus(id, status);
-    await loadRequests();
+    const items = await browserLocalDateRequestStore.listByReceiver(receiverId);
+    setRequests(items.sort((a, b) => b.createdAt.localeCompare(a.createdAt)));
   }
 
   function getSenderName(senderId: string) {
@@ -67,34 +73,31 @@ export default function InboxPage() {
   const others = requests.filter((r) => r.status !== "pending");
 
   return (
-    <div className="min-h-screen bg-orange-50">
-      <header className="bg-white border-b px-4 py-3 flex items-center justify-between">
+    <div className="page-shell min-h-screen">
+      <header className="flex items-center justify-between border-b border-white/10 bg-slate-950/70 px-4 py-4 backdrop-blur-xl">
         <div className="flex items-center gap-3">
-          <Link href="/map" className="text-orange-500 font-bold text-sm hover:underline">
-            ← 回地圖
+          <Link href="/map" className="text-sm font-medium text-amber-200 hover:text-amber-100">
+            Back to map
           </Link>
-          <span className="font-bold text-gray-800">邀約收件匣</span>
+          <span className="font-heading text-2xl text-stone-50">邀請收件匣</span>
         </div>
-        {viewerProfile && (
-          <span className="text-sm text-muted-foreground">{viewerProfile.nickname}</span>
-        )}
+        {viewerProfile && <span className="text-sm text-stone-300">{viewerProfile.nickname}</span>}
       </header>
 
-      <div className="max-w-lg mx-auto p-4 space-y-4">
-        <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 text-xs text-amber-700">
-          Demo 模式：目前以 <strong>{DEMO_RECEIVER_ID}</strong> 身份查看收件匣。
-          你發出的邀約會送到這個帳號。
+      <div className="mx-auto max-w-3xl space-y-4 p-4 md:p-8">
+        <div className="rounded-2xl border border-amber-200/15 bg-amber-300/10 px-4 py-3 text-xs leading-6 text-amber-100/90 backdrop-blur">
+          目前這一頁使用 demo 收件人 <strong>{DEMO_RECEIVER_ID}</strong> 來展示收到邀請、接受與婉拒的流程。
         </div>
 
         {loading ? (
-          <p className="text-center text-muted-foreground py-8">載入中…</p>
+          <p className="py-8 text-center text-stone-400">Loading requests...</p>
         ) : requests.length === 0 ? (
-          <div className="text-center py-12 text-muted-foreground">
-            <p className="text-4xl mb-3">📭</p>
-            <p>還沒有邀約</p>
+          <div className="glass-panel rounded-[2rem] py-12 text-center text-stone-300">
+            <p className="mb-3 text-4xl">⌁</p>
+            <p>目前還沒有任何邀請</p>
             <Link href="/map">
-              <Button className="mt-4 bg-orange-500 hover:bg-orange-600 text-white" size="sm">
-                去地圖找人邀約
+              <Button className="mt-4 bg-amber-300 text-slate-950 hover:bg-amber-200" size="sm">
+                去地圖上找人
               </Button>
             </Link>
           </div>
@@ -102,8 +105,8 @@ export default function InboxPage() {
           <>
             {pending.length > 0 && (
               <section>
-                <h2 className="text-sm font-semibold text-gray-600 mb-2">
-                  待回應 ({pending.length})
+                <h2 className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-stone-400">
+                  待處理 ({pending.length})
                 </h2>
                 <div className="space-y-3">
                   {pending.map((req) => (
@@ -121,8 +124,8 @@ export default function InboxPage() {
 
             {others.length > 0 && (
               <section>
-                <h2 className="text-sm font-semibold text-gray-600 mb-2 mt-4">
-                  歷史紀錄 ({others.length})
+                <h2 className="mt-4 mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-stone-400">
+                  已處理 ({others.length})
                 </h2>
                 <div className="space-y-3">
                   {others.map((req) => (
@@ -154,20 +157,15 @@ function RequestCard({
   onReject?: () => void;
 }) {
   return (
-    <Card className="bg-white">
+    <Card className="glass-panel rounded-[1.5rem] border-white/10 bg-white/6">
       <CardHeader className="pb-2">
         <div className="flex items-start justify-between gap-2">
-          <CardTitle className="text-sm font-semibold">
-            來自 {senderName}
-          </CardTitle>
-          <Badge
-            className={`text-xs border ${STATUS_COLORS[request.status]}`}
-            variant="outline"
-          >
+          <CardTitle className="text-base text-stone-50">來自 {senderName} 的邀請</CardTitle>
+          <Badge className={`border text-xs ${STATUS_COLORS[request.status]}`} variant="outline">
             {STATUS_LABELS[request.status]}
           </Badge>
         </div>
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-stone-400">
           {new Date(request.createdAt).toLocaleString("zh-TW", {
             month: "numeric",
             day: "numeric",
@@ -177,24 +175,24 @@ function RequestCard({
         </p>
       </CardHeader>
       <CardContent className="space-y-2 text-sm">
-        <div className="flex gap-4 text-xs text-gray-600">
-          <span>🍽 {FOOD_TYPE_LABELS[request.foodType]}</span>
-          <span>📍 {request.proposedArea}</span>
-          <span>🕐 {request.proposedTime}</span>
+        <div className="flex gap-4 text-xs text-stone-300">
+          <span>{FOOD_TYPE_LABELS[request.foodType]}</span>
+          <span>{request.proposedArea}</span>
+          <span>{request.proposedTime}</span>
         </div>
         {request.message && (
-          <p className="text-sm text-gray-700 bg-gray-50 rounded p-2 italic">
-            "{request.message}"
+          <p className="rounded-xl border border-white/8 bg-black/20 p-3 text-sm italic text-stone-200">
+            &ldquo;{request.message}&rdquo;
           </p>
         )}
         {request.status === "pending" && onAccept && onReject && (
           <div className="flex gap-2 pt-1">
             <Button
               size="sm"
-              className="flex-1 bg-orange-500 hover:bg-orange-600 text-white"
+              className="flex-1 bg-amber-300 text-slate-950 hover:bg-amber-200"
               onClick={onAccept}
             >
-              接受邀約
+              接受
             </Button>
             <Button size="sm" variant="outline" className="flex-1" onClick={onReject}>
               婉拒

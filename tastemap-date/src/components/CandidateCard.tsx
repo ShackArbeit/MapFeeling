@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import type { UserProfile } from "@/types/domain";
 import type { AdviceOutput } from "@/lib/ai/generateInviteAdvice";
 import { calculateMatchScore } from "@/features/matching/calculateMatchScore";
@@ -9,13 +10,12 @@ import { FOOD_TYPE_LABELS } from "@/data/food-types";
 import {
   Card,
   CardContent,
+  CardDescription,
   CardHeader,
   CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 interface Props {
   user: UserProfile;
@@ -26,6 +26,19 @@ export function CandidateCard({ user, viewerProfile }: Props) {
   const [advice, setAdvice] = useState<AdviceOutput | null>(null);
   const [loadingAdvice, setLoadingAdvice] = useState(false);
   const [sentRequestId, setSentRequestId] = useState<string | null>(null);
+  const actionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setAdvice(null);
+    setSentRequestId(null);
+    setLoadingAdvice(false);
+  }, [user.id]);
+
+  useEffect(() => {
+    if (advice) {
+      actionRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [advice]);
 
   async function handleGenerateAdvice() {
     if (!viewerProfile) return;
@@ -55,17 +68,17 @@ export function CandidateCard({ user, viewerProfile }: Props) {
   }
 
   return (
-    <Card className="mx-4 mt-4">
+    <Card className="mx-4 mt-4 rounded-[1.5rem] border border-white/10 bg-white/6">
       <CardHeader>
         <div className="flex items-center gap-3">
           <img
             src={user.avatarUrl}
             alt={user.nickname}
-            className="w-14 h-14 rounded-full border-2 border-orange-200 bg-gray-100"
+            className="h-14 w-14 rounded-full border-2 border-amber-200/30 bg-gray-100"
           />
           <div>
-            <CardTitle className="text-base">{user.nickname}</CardTitle>
-            <CardDescription>
+            <CardTitle className="text-lg text-stone-50">{user.nickname}</CardTitle>
+            <CardDescription className="text-stone-400">
               {user.preferredArea} · {user.zodiacSign}
             </CardDescription>
           </div>
@@ -73,20 +86,20 @@ export function CandidateCard({ user, viewerProfile }: Props) {
       </CardHeader>
 
       <CardContent className="space-y-3">
-        <p className="text-sm text-gray-700">{user.bio}</p>
+        <p className="text-sm text-stone-300">{user.bio || "這位使用者還沒有填寫自我介紹。"}</p>
 
         <div>
-          <p className="text-xs font-medium text-muted-foreground mb-1.5">食物喜好</p>
+          <p className="mb-1.5 text-xs font-medium text-stone-400">飲食偏好</p>
           <div className="flex flex-wrap gap-1">
             {user.foodPreferences.map((food) => (
               <Badge
                 key={food}
                 variant="secondary"
-                className={`text-xs ${
+                className={
                   viewerProfile?.foodPreferences.includes(food)
-                    ? "bg-orange-100 text-orange-700"
-                    : ""
-                }`}
+                    ? "border border-amber-200/20 bg-amber-300/12 text-amber-100"
+                    : "border border-white/10 bg-white/6 text-stone-300"
+                }
               >
                 {FOOD_TYPE_LABELS[food]}
               </Badge>
@@ -95,67 +108,71 @@ export function CandidateCard({ user, viewerProfile }: Props) {
         </div>
 
         <div>
-          <p className="text-xs font-medium text-muted-foreground mb-1">約會心情</p>
-          <p className="text-sm italic text-gray-600">"{user.vibePrompt}"</p>
+          <p className="mb-1 text-xs font-medium text-stone-400">約會氛圍</p>
+          <p className="text-sm italic text-stone-300">&ldquo;{user.vibePrompt}&rdquo;</p>
         </div>
 
         <div>
-          <p className="text-xs font-medium text-muted-foreground mb-1.5">可約時段</p>
+          <p className="mb-1.5 text-xs font-medium text-stone-400">可約時間</p>
           <div className="flex flex-wrap gap-1">
             {user.availableSlots.map((slot) => (
-              <Badge key={slot} variant="outline" className="text-xs">
+              <Badge key={slot} variant="outline" className="border-white/10 bg-black/10 text-xs text-stone-300">
                 {slot}
               </Badge>
             ))}
           </div>
         </div>
 
-        <p className="text-xs text-muted-foreground border-t pt-2">{user.safetyNote}</p>
+        <p className="border-t border-white/10 pt-2 text-xs text-stone-400">
+          {user.safetyNote || "建議先在公開場合碰面。"}
+        </p>
 
-        {advice ? (
-          <div className="bg-orange-50 border border-orange-100 rounded-lg p-3 space-y-2">
-            <p className="text-xs text-orange-700">{advice.reason}</p>
-            <p className="text-sm text-gray-700 italic">"{advice.suggestedMessage}"</p>
-          </div>
-        ) : null}
-
-        <div className="space-y-2">
-          {!advice && (
-            <Button
-              className="w-full"
-              size="sm"
-              variant="outline"
-              onClick={handleGenerateAdvice}
-              disabled={loadingAdvice || !viewerProfile}
-            >
-              {loadingAdvice ? "生成中…" : "產生邀約建議"}
-            </Button>
-          )}
-
-          {advice && viewerProfile && !sentRequestId && (
-            <DateRequestDialog
-              viewer={viewerProfile}
-              candidate={user}
-              suggestedMessage={advice.suggestedMessage}
-              onSent={(req) => setSentRequestId(req.id)}
-            />
-          )}
-
-          {sentRequestId && (
-            <div className="text-center space-y-1">
-              <p className="text-sm text-green-600 font-medium">邀約已送出 ✓</p>
-              <Link href="/inbox" className="text-xs text-orange-500 hover:underline">
-                前往收件匣查看
-              </Link>
+        <div ref={actionRef} className="space-y-2">
+          {advice && (
+            <div className="rounded-2xl border border-amber-200/15 bg-amber-300/10 p-3 space-y-2">
+              <p className="text-xs text-amber-100">{advice.reason}</p>
+              <p className="text-sm italic text-stone-100">&ldquo;{advice.suggestedMessage}&rdquo;</p>
             </div>
           )}
 
-          {!viewerProfile && (
-            <p className="text-xs text-center text-muted-foreground">
-              <Link href="/onboarding" className="text-orange-500 hover:underline">
-                建立檔案
-              </Link>{" "}
-              後才能邀約
+          {viewerProfile ? (
+            <>
+              {!advice && !sentRequestId && (
+                <Button
+                  className="w-full"
+                  size="sm"
+                  variant="outline"
+                  onClick={handleGenerateAdvice}
+                  disabled={loadingAdvice}
+                >
+                  {loadingAdvice ? "生成中..." : "產生邀約建議"}
+                </Button>
+              )}
+
+              {advice && !sentRequestId && (
+                <DateRequestDialog
+                  viewer={viewerProfile}
+                  candidate={user}
+                  suggestedMessage={advice.suggestedMessage}
+                  onSent={(req) => setSentRequestId(req.id)}
+                />
+              )}
+
+              {sentRequestId && (
+                <div className="space-y-1 text-center">
+                  <p className="text-sm font-medium text-emerald-300">邀請已送出</p>
+                  <Link href="/inbox" className="text-xs text-amber-200 hover:underline">
+                    前往收件匣查看
+                  </Link>
+                </div>
+              )}
+            </>
+          ) : (
+            <p className="rounded-xl border border-white/8 bg-black/15 px-3 py-2.5 text-center text-xs text-stone-400">
+              <Link href="/onboarding" className="font-medium text-amber-200 hover:text-amber-100 hover:underline">
+                先建立個人檔案
+              </Link>
+              ，才能產生邀約與發送請求。
             </p>
           )}
         </div>

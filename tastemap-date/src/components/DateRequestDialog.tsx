@@ -32,19 +32,17 @@ interface Props {
 }
 
 const TIME_SLOTS = [
-  "本週末午後",
-  "本週末晚上",
-  "下週末午後",
-  "下週末晚上",
-  "平日午後",
-  "平日晚上",
+  "今天晚上",
+  "明天晚上",
+  "這週五晚上",
+  "這週六中午",
+  "這週六晚上",
+  "這週日下午",
 ];
 
 export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent }: Props) {
   const [open, setOpen] = useState(false);
-  const [foodType, setFoodType] = useState<FoodType>(
-    viewer.foodPreferences[0] ?? "coffee"
-  );
+  const [foodType, setFoodType] = useState<FoodType>(viewer.foodPreferences[0] ?? "coffee");
   const [proposedArea, setProposedArea] = useState(viewer.preferredArea);
   const [proposedTime, setProposedTime] = useState(TIME_SLOTS[0]);
   const [message, setMessage] = useState(suggestedMessage);
@@ -59,7 +57,7 @@ export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent 
         receiverId: candidate.id,
         foodType,
         proposedArea,
-        proposedPlaceName: `${proposedArea}附近`,
+        proposedPlaceName: `${proposedArea} 附近`,
         proposedTime,
         message,
         aiReason: suggestedMessage,
@@ -79,22 +77,24 @@ export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent 
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger
         render={
-          <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white" size="sm" />
+          <Button className="w-full bg-amber-300 text-slate-950 hover:bg-amber-200" size="sm" />
         }
       >
-        發送邀約
+        發送邀請
       </DialogTrigger>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="border border-white/10 bg-slate-950/95 text-stone-100 sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>邀約 {candidate.nickname}</DialogTitle>
-          <DialogDescription>低壓力的第一步，對方可以自由接受或拒絕。</DialogDescription>
+          <DialogTitle>邀請 {candidate.nickname}</DialogTitle>
+          <DialogDescription>
+            先決定想吃什麼、在哪一區碰面，再把訊息調整成你自己的語氣。
+          </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-3 py-2">
           <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">想吃什麼</label>
-            <Select value={foodType} onValueChange={(v) => { if (v !== null) setFoodType(v as FoodType); }}>
-              <SelectTrigger>
+            <label className="mb-1 block text-xs font-medium text-stone-400">飲食類型</label>
+            <Select value={foodType} onValueChange={(v) => v && setFoodType(v as FoodType)}>
+              <SelectTrigger className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-stone-100">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -108,9 +108,9 @@ export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent 
           </div>
 
           <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">約會區域</label>
-            <Select value={proposedArea} onValueChange={(v) => { if (v !== null) setProposedArea(v); }}>
-              <SelectTrigger>
+            <label className="mb-1 block text-xs font-medium text-stone-400">碰面區域</label>
+            <Select value={proposedArea} onValueChange={(v) => v && setProposedArea(v)}>
+              <SelectTrigger className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-stone-100">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -124,9 +124,9 @@ export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent 
           </div>
 
           <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">可約時間</label>
-            <Select value={proposedTime} onValueChange={(v) => { if (v !== null) setProposedTime(v); }}>
-              <SelectTrigger>
+            <label className="mb-1 block text-xs font-medium text-stone-400">時間</label>
+            <Select value={proposedTime} onValueChange={(v) => v && setProposedTime(v)}>
+              <SelectTrigger className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-stone-100">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -140,12 +140,13 @@ export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent 
           </div>
 
           <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1 block">邀約訊息</label>
+            <label className="mb-1 block text-xs font-medium text-stone-400">邀請訊息</label>
             <Textarea
+              className="min-h-28 rounded-[1.4rem] border-white/10 bg-white/5 px-4 py-3 text-stone-100 placeholder:text-stone-500"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows={3}
-              placeholder="寫下你想說的話…"
+              placeholder="輸入你想送出的訊息"
             />
           </div>
         </div>
@@ -155,11 +156,11 @@ export function DateRequestDialog({ viewer, candidate, suggestedMessage, onSent 
             取消
           </Button>
           <Button
-            className="bg-orange-500 hover:bg-orange-600 text-white"
+            className="bg-amber-300 text-slate-950 hover:bg-amber-200"
             onClick={handleSend}
             disabled={sending || sent || !message.trim()}
           >
-            {sent ? "已送出 ✓" : sending ? "送出中…" : "確認送出"}
+            {sent ? "已送出" : sending ? "送出中..." : "確認送出"}
           </Button>
         </DialogFooter>
       </DialogContent>

@@ -1,6 +1,6 @@
 "use client";
 
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import L from "leaflet";
 import type { UserProfile } from "@/types/domain";
 
@@ -11,15 +11,16 @@ interface Props {
 }
 
 function createAvatarIcon(avatarUrl: string, isSelected: boolean) {
-  const border = isSelected ? "#f97316" : "#ffffff";
+  const border = isSelected ? "#fbbf24" : "#ffffff";
   const shadow = isSelected
-    ? "0 0 0 3px #fed7aa, 0 3px 10px rgba(0,0,0,0.3)"
-    : "0 2px 6px rgba(0,0,0,0.25)";
+    ? "0 0 0 4px rgba(251,191,36,0.18), 0 10px 24px rgba(0,0,0,0.45)"
+    : "0 8px 18px rgba(0,0,0,0.35)";
+
   return L.divIcon({
     className: "",
-    html: `<div style="width:40px;height:40px;border-radius:50%;border:3px solid ${border};box-shadow:${shadow};overflow:hidden;background:#f3f4f6;"><img src="${avatarUrl}" width="40" height="40" style="width:100%;height:100%;display:block;"/></div>`,
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
+    html: `<div style="width:42px;height:42px;border-radius:999px;border:3px solid ${border};box-shadow:${shadow};overflow:hidden;background:#1f2937;"><img src="${avatarUrl}" width="42" height="42" style="width:100%;height:100%;display:block;"/></div>`,
+    iconSize: [42, 42],
+    iconAnchor: [21, 21],
     popupAnchor: [0, -24],
   });
 }
@@ -34,7 +35,7 @@ export function TasteMap({ users, selectedUserId, onSelectUser }: Props) {
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
       />
       {users.map((user) => (
         <Marker

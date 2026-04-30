@@ -11,11 +11,11 @@ interface Props {
 
 export function FoodTagFilter({ selected, onSelect }: Props) {
   return (
-    <div className="flex gap-1.5 flex-nowrap">
+    <div className="flex flex-nowrap gap-1.5">
       <Button
         size="sm"
         variant={selected === null ? "default" : "outline"}
-        className="shrink-0"
+        className="shrink-0 rounded-full border-white/10 bg-white/8 text-stone-100 hover:bg-white/12"
         onClick={() => onSelect(null)}
       >
         全部
@@ -25,7 +25,7 @@ export function FoodTagFilter({ selected, onSelect }: Props) {
           key={food}
           size="sm"
           variant={selected === food ? "default" : "outline"}
-          className="shrink-0"
+          className="shrink-0 rounded-full border-white/10 bg-white/8 text-stone-100 hover:bg-white/12"
           onClick={() => onSelect(selected === food ? null : food)}
         >
           {FOOD_TYPE_LABELS[food]}
