@@ -15,7 +15,7 @@ export function FoodTagFilter({ selected, onSelect }: Props) {
       <Button
         size="sm"
         variant={selected === null ? "default" : "outline"}
-        className="shrink-0 rounded-full border-white/10 bg-white/8 text-stone-100 hover:bg-white/12"
+        className="shrink-0 rounded-full border-white/10 bg-white/8 text-sm text-stone-100 transition-all duration-200 hover:scale-105 hover:border-amber-200/35 hover:bg-gradient-to-r hover:from-amber-300/20 hover:to-orange-200/10 hover:text-amber-100 hover:shadow-[0_0_12px_rgba(251,191,36,0.22)]"
         onClick={() => onSelect(null)}
       >
         全部
@@ -25,7 +25,7 @@ export function FoodTagFilter({ selected, onSelect }: Props) {
           key={food}
           size="sm"
           variant={selected === food ? "default" : "outline"}
-          className="shrink-0 rounded-full border-white/10 bg-white/8 text-stone-100 hover:bg-white/12"
+          className="shrink-0 rounded-full border-white/10 bg-white/8 text-sm text-stone-100 transition-all duration-200 hover:scale-105 hover:border-amber-200/35 hover:bg-gradient-to-r hover:from-amber-300/20 hover:to-orange-200/10 hover:text-amber-100 hover:shadow-[0_0_12px_rgba(251,191,36,0.22)]"
           onClick={() => onSelect(selected === food ? null : food)}
         >
           {FOOD_TYPE_LABELS[food]}

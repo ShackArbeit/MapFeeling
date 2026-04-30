@@ -113,11 +113,11 @@ export default function Home() {
       <ClearSessionOnMount />
 
       <section className="relative px-4 pt-6">
-        <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-white/5 px-4 py-3 text-base text-stone-300 backdrop-blur md:px-6">
-          <span className="font-medium uppercase tracking-[0.26em] text-amber-200/80">
+        <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-4 text-xl text-stone-300 backdrop-blur md:px-8">
+          <span className="text-xl font-semibold uppercase tracking-[0.26em] text-amber-200/80">
             TasteMap Date
           </span>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6 text-xl">
             <Link href="/onboarding" className="hover:text-white">
               Onboarding
             </Link>
@@ -132,15 +132,15 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <ParallaxPanel direction="up" strength={28}>
             <div>
-              <Badge className="mb-6 border border-amber-300/20 bg-amber-300/10 px-4 py-1.5 text-sm text-amber-100 hover:bg-amber-300/10">
+              <Badge className="mb-6 cursor-default border border-amber-300/20 bg-amber-300/10 px-4 py-1.5 text-sm text-amber-100 transition-all duration-300 hover:scale-105 hover:border-amber-300/50 hover:bg-gradient-to-r hover:from-amber-400/25 hover:to-orange-300/15 hover:text-amber-50 hover:shadow-[0_0_16px_rgba(251,191,36,0.25)]">
                 以味覺偏好開始一段關係
               </Badge>
-              <h1 className="max-w-3xl font-heading text-5xl font-semibold leading-[1.06] tracking-tight text-stone-50 sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-3xl cursor-default font-heading text-5xl font-semibold leading-[1.06] tracking-tight text-stone-50 transition-all duration-300 hover:scale-[1.015] hover:bg-gradient-to-r hover:from-amber-100 hover:to-orange-200 hover:bg-clip-text hover:text-transparent sm:text-6xl lg:text-7xl">
                 找到一起吃晚餐的人
                 <br />
                 也找到更自然的開場方式
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-300 md:text-xl">
+              <p className="mt-6 max-w-2xl cursor-default text-lg leading-8 text-stone-300 transition-all duration-300 hover:scale-[1.01] hover:text-stone-100 md:text-xl">
                 TasteMap Date 把配對、地圖探索與邀約訊息整理成一條更流暢的路徑。先看口味，再看距離與氛圍，最後才決定要不要發出邀請。
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -148,7 +148,7 @@ export default function Home() {
                   href="/onboarding"
                   className={cn(
                     buttonVariants({ size: "lg" }),
-                    "h-12 rounded-full border border-amber-200/20 bg-amber-300 px-7 text-base text-slate-950 hover:bg-amber-200"
+                    "h-12 rounded-full border border-amber-200/20 bg-amber-300 px-7 text-base text-slate-950 transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-amber-200 hover:to-orange-300 hover:shadow-[0_0_24px_rgba(251,191,36,0.45)]"
                   )}
                 >
                   建立個人檔案
@@ -157,7 +157,7 @@ export default function Home() {
                   href="/map"
                   className={cn(
                     buttonVariants({ size: "lg", variant: "outline" }),
-                    "h-12 rounded-full border-white/15 bg-white/5 px-7 text-base text-stone-100 hover:bg-white/10"
+                    "h-12 rounded-full border-white/15 bg-white/5 px-7 text-base text-stone-100 transition-all duration-300 hover:scale-105 hover:border-sky-300/35 hover:bg-gradient-to-r hover:from-white/10 hover:to-sky-300/15 hover:text-white hover:shadow-[0_0_20px_rgba(125,211,252,0.25)]"
                   )}
                 >
                   直接看地圖
@@ -167,9 +167,9 @@ export default function Home() {
           </ParallaxPanel>
 
           <ParallaxPanel direction="down" strength={40}>
-            <div className="glass-panel relative overflow-hidden rounded-[2rem] p-6 md:p-8">
+            <div className="glass-panel relative overflow-hidden rounded-[2rem] p-4 md:p-5">
               <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-amber-200/70 to-transparent" />
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-3 md:grid-cols-2">
                 {[
                   { label: "Mock profiles", value: "240+" },
                   { label: "Match signals", value: "5" },
@@ -178,20 +178,20 @@ export default function Home() {
                 ].map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-3xl border border-white/10 bg-black/20 p-5"
+                    className="group rounded-2xl border border-white/10 bg-black/20 p-3 transition-all duration-300 hover:scale-[1.05] hover:border-amber-200/35 hover:bg-gradient-to-br hover:from-amber-300/20 hover:to-sky-300/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)]"
                   >
-                    <p className="text-sm uppercase tracking-[0.22em] text-stone-400">
+                    <p className="text-xs uppercase tracking-[0.22em] text-stone-400 transition-colors duration-300 group-hover:text-amber-200/80">
                       {item.label}
                     </p>
-                    <p className="mt-3 font-heading text-5xl text-stone-50">{item.value}</p>
+                    <p className="mt-1.5 font-heading text-3xl text-stone-50 transition-colors duration-300 group-hover:text-amber-100">{item.value}</p>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 rounded-3xl border border-amber-200/10 bg-gradient-to-br from-amber-300/18 to-sky-300/10 p-6">
-                <p className="text-sm uppercase tracking-[0.22em] text-amber-100/70">
+              <div className="group mt-4 rounded-2xl border border-amber-200/10 bg-gradient-to-br from-amber-300/18 to-sky-300/10 p-4 transition-all duration-300 hover:scale-[1.03] hover:border-amber-200/30 hover:from-amber-300/30 hover:to-sky-300/20 hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)]">
+                <p className="text-xs uppercase tracking-[0.22em] text-amber-100/70 transition-colors duration-300 group-hover:text-amber-200">
                   Designed flow
                 </p>
-                <p className="mt-3 text-base leading-8 text-stone-200">
+                <p className="mt-2 text-sm leading-7 text-stone-200 transition-colors duration-300 group-hover:text-stone-50">
                   從首頁、onboarding、map 到 inbox，都維持同一套深色層次與玻璃材質感，使用體驗不再像被拆散的功能頁。
                 </p>
               </div>
@@ -297,7 +297,7 @@ export default function Home() {
               href="/onboarding"
               className={cn(
                 buttonVariants({ size: "lg", variant: "secondary" }),
-                "h-12 rounded-full bg-white px-7 text-base text-slate-950 hover:bg-stone-100"
+                "h-12 rounded-full bg-white px-7 text-base text-slate-950 transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-amber-200 hover:to-orange-200 hover:shadow-[0_0_24px_rgba(251,191,36,0.45)]"
               )}
             >
               立即開始

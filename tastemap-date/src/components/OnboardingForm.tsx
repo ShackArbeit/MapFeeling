@@ -103,10 +103,10 @@ export function OnboardingForm() {
             name="nickname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-stone-200">暱稱</FormLabel>
+                <FormLabel className="text-base text-stone-200">暱稱</FormLabel>
                 <FormControl>
                   <Input
-                    className="h-11 rounded-2xl border-white/10 bg-white/5 px-4 text-stone-50 placeholder:text-stone-500"
+                    className="h-11 rounded-2xl border-white/10 bg-white/5 px-4 text-base text-stone-50 placeholder:text-stone-500"
                     placeholder="例如：深夜拉麵巡航員"
                     {...field}
                   />
@@ -121,11 +121,11 @@ export function OnboardingForm() {
             name="birthDate"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-stone-200">生日</FormLabel>
+                <FormLabel className="text-base text-stone-200">生日</FormLabel>
                 <FormControl>
                   <Input
                     type="date"
-                    className="h-11 rounded-2xl border-white/10 bg-white/5 px-4 text-stone-50"
+                    className="h-11 rounded-2xl border-white/10 bg-white/5 px-4 text-base text-stone-50"
                     {...field}
                   />
                 </FormControl>
@@ -140,16 +140,17 @@ export function OnboardingForm() {
           name="foodPreferences"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-stone-200">你最常想吃什麼</FormLabel>
+              <FormLabel className="text-base text-stone-200">你最常想吃什麼</FormLabel>
               <div className="grid grid-cols-2 gap-3 pt-2 md:grid-cols-3">
                 {FOOD_TYPES.map((food) => (
                   <div
                     key={food}
-                    className="flex items-center gap-2 rounded-2xl border border-white/8 bg-black/15 px-3 py-2.5"
+                    className="group flex cursor-pointer items-center gap-2.5 rounded-2xl border border-white/12 bg-black/15 px-3 py-2.5 transition-all duration-200 hover:scale-[1.05] hover:border-amber-200/35 hover:bg-gradient-to-r hover:from-amber-300/18 hover:to-orange-200/10 hover:shadow-[0_4px_16px_rgba(0,0,0,0.28)]"
                   >
                     <Checkbox
                       id={`food-${food}`}
                       checked={field.value.includes(food)}
+                      className="border-white/45 bg-white/12 data-checked:border-amber-300 data-checked:bg-amber-300"
                       onCheckedChange={(checked) => {
                         if (checked) {
                           field.onChange([...field.value, food]);
@@ -160,7 +161,7 @@ export function OnboardingForm() {
                     />
                     <label
                       htmlFor={`food-${food}`}
-                      className="cursor-pointer text-sm font-normal text-stone-300"
+                      className="cursor-pointer text-base font-normal text-stone-200 transition-colors duration-200 group-hover:text-amber-100"
                     >
                       {FOOD_TYPE_LABELS[food]}
                     </label>
@@ -177,10 +178,10 @@ export function OnboardingForm() {
           name="preferredArea"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-stone-200">常活動區域</FormLabel>
+              <FormLabel className="text-base text-stone-200">常活動區域</FormLabel>
               <Select onValueChange={field.onChange} value={field.value}>
                 <FormControl>
-                  <SelectTrigger className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-stone-100">
+                  <SelectTrigger className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-base text-stone-100">
                     <SelectValue placeholder="選擇一個區域" />
                   </SelectTrigger>
                 </FormControl>
@@ -202,16 +203,17 @@ export function OnboardingForm() {
           name="availableSlots"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-stone-200">你通常什麼時候方便</FormLabel>
+              <FormLabel className="text-base text-stone-200">你通常什麼時候方便</FormLabel>
               <div className="grid grid-cols-2 gap-3 pt-2 md:grid-cols-3">
                 {SLOT_OPTIONS.map((slot) => (
                   <div
                     key={slot}
-                    className="flex items-center gap-2 rounded-2xl border border-white/8 bg-black/15 px-3 py-2.5"
+                    className="group flex cursor-pointer items-center gap-2.5 rounded-2xl border border-white/12 bg-black/15 px-3 py-2.5 transition-all duration-200 hover:scale-[1.05] hover:border-sky-300/30 hover:bg-gradient-to-r hover:from-sky-300/15 hover:to-indigo-300/10 hover:shadow-[0_4px_16px_rgba(0,0,0,0.28)]"
                   >
                     <Checkbox
                       id={`slot-${slot}`}
                       checked={field.value.includes(slot)}
+                      className="border-white/45 bg-white/12 data-checked:border-sky-400 data-checked:bg-sky-400"
                       onCheckedChange={(checked) => {
                         if (checked) {
                           field.onChange([...field.value, slot]);
@@ -222,7 +224,7 @@ export function OnboardingForm() {
                     />
                     <label
                       htmlFor={`slot-${slot}`}
-                      className="cursor-pointer text-sm font-normal text-stone-300"
+                      className="cursor-pointer text-base font-normal text-stone-200 transition-colors duration-200 group-hover:text-sky-100"
                     >
                       {slot}
                     </label>
@@ -239,10 +241,10 @@ export function OnboardingForm() {
           name="vibePrompt"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-stone-200">想認識什麼感覺的人</FormLabel>
+              <FormLabel className="text-base text-stone-200">想認識什麼感覺的人</FormLabel>
               <FormControl>
                 <Textarea
-                  className="min-h-28 rounded-[1.4rem] border-white/10 bg-white/5 px-4 py-3 text-stone-100 placeholder:text-stone-500"
+                  className="min-h-28 rounded-[1.4rem] border-white/10 bg-white/5 px-4 py-3 text-base text-stone-100 placeholder:text-stone-500"
                   placeholder="例如：可以一起散步、聊天不急、喜歡找有氣氛的小店。"
                   rows={3}
                   {...field}

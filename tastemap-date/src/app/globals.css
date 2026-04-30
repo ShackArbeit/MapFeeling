@@ -147,6 +147,11 @@
     border-bottom: 1px solid oklch(0.55 0.07 222 / 0.07);
   }
 
+  /* Invert OSM tiles to dark theme — preserves Traditional Chinese street names */
+  .map-tile-dark {
+    filter: invert(1) hue-rotate(180deg) brightness(0.72) saturate(0.55) contrast(1.08);
+  }
+
   .section-violet {
     background: linear-gradient(
       180deg,
