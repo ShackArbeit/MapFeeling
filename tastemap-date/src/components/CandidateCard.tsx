@@ -72,7 +72,10 @@ export function CandidateCard({ user, viewerProfile }: Props) {
         } else if (data.fallbackReason === "no-api-key") {
           console.warn("[TasteMap] 約會建議來源：⚠️ Fallback — ANTHROPIC_API_KEY 未設定，請確認 GitHub Secret 已加入且重新 deploy");
         } else {
-          console.warn("[TasteMap] 約會建議來源：⚠️ Fallback — Anthropic API 呼叫失敗，請至 Cloud Run 日誌查看詳細錯誤（可能是 rate limit、model 名稱錯誤或網路問題）");
+          console.warn(
+            "[TasteMap] 約會建議來源：⚠️ Fallback — Anthropic API 呼叫失敗",
+            data.errorDetail ?? "（無詳細錯誤訊息，請至 Cloud Run 日誌查看）"
+          );
         }
         setAdvice(data);
       }

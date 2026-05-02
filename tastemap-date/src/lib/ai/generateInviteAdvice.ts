@@ -16,6 +16,7 @@ export interface AdviceOutput {
   suggestedMessage: string;
   source: "api" | "fallback";
   fallbackReason?: "no-api-key" | "api-error";
+  errorDetail?: string;
 }
 
 function fallback(sharedFoodTypes: FoodType[], reason: "no-api-key" | "api-error"): AdviceOutput {
@@ -60,7 +61,8 @@ export async function generateInviteAdvice(input: AdviceInput): Promise<AdviceOu
     if (parsed.reason && parsed.suggestedMessage) return { ...parsed, source: "api" };
     return fallback(input.sharedFoodTypes, "api-error");
   } catch (err) {
+    const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
     console.error("[generateInviteAdvice] Anthropic API 呼叫失敗：", err);
-    return fallback(input.sharedFoodTypes, "api-error");
+    return { ...fallback(input.sharedFoodTypes, "api-error"), errorDetail: detail };
   }
 }
