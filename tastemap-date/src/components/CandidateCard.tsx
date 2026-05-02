@@ -69,8 +69,10 @@ export function CandidateCard({ user, viewerProfile }: Props) {
       if (data.reason && data.suggestedMessage) {
         if (data.source === "api") {
           console.log("[TasteMap] 約會建議來源：✅ Anthropic API（真實 AI 產生）");
+        } else if (data.fallbackReason === "no-api-key") {
+          console.warn("[TasteMap] 約會建議來源：⚠️ Fallback — ANTHROPIC_API_KEY 未設定，請確認 GitHub Secret 已加入且重新 deploy");
         } else {
-          console.log("[TasteMap] 約會建議來源：⚠️ Fallback（API key 未設定或 API 呼叫失敗，使用預設內容）");
+          console.warn("[TasteMap] 約會建議來源：⚠️ Fallback — Anthropic API 呼叫失敗，請至 Cloud Run 日誌查看詳細錯誤（可能是 rate limit、model 名稱錯誤或網路問題）");
         }
         setAdvice(data);
       }

@@ -15,20 +15,22 @@ export interface AdviceOutput {
   reason: string;
   suggestedMessage: string;
   source: "api" | "fallback";
+  fallbackReason?: "no-api-key" | "api-error";
 }
 
-function fallback(sharedFoodTypes: FoodType[]): AdviceOutput {
+function fallback(sharedFoodTypes: FoodType[], reason: "no-api-key" | "api-error"): AdviceOutput {
   const foodLabels = sharedFoodTypes.map((f) => FOOD_TYPE_LABELS[f]);
   return {
     reason: `你們都對 ${foodLabels.join("、") || "美食"} 有興趣，互動偏好適合從輕鬆的餐飲邀約開始。`,
     suggestedMessage: `我看到你也喜歡 ${foodLabels[0] ?? "美食"}，要不要找個週末午後一起去試試？`,
     source: "fallback",
+    fallbackReason: reason,
   };
 }
 
 export async function generateInviteAdvice(input: AdviceInput): Promise<AdviceOutput> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return fallback(input.sharedFoodTypes);
+  if (!apiKey) return fallback(input.sharedFoodTypes, "no-api-key");
 
   const foodLabels = input.sharedFoodTypes.map((f) => FOOD_TYPE_LABELS[f]);
 
@@ -56,8 +58,9 @@ export async function generateInviteAdvice(input: AdviceInput): Promise<AdviceOu
     const text = message.content[0].type === "text" ? message.content[0].text.trim() : "";
     const parsed = JSON.parse(text) as Omit<AdviceOutput, "source">;
     if (parsed.reason && parsed.suggestedMessage) return { ...parsed, source: "api" };
-    return fallback(input.sharedFoodTypes);
-  } catch {
-    return fallback(input.sharedFoodTypes);
+    return fallback(input.sharedFoodTypes, "api-error");
+  } catch (err) {
+    console.error("[generateInviteAdvice] Anthropic API 呼叫失敗：", err);
+    return fallback(input.sharedFoodTypes, "api-error");
   }
 }
