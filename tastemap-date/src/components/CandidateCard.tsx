@@ -67,9 +67,15 @@ export function CandidateCard({ user, viewerProfile }: Props) {
 
       const data = (await response.json()) as AdviceOutput;
       if (data.reason && data.suggestedMessage) {
+        if (data.source === "api") {
+          console.log("[TasteMap] 約會建議來源：✅ Anthropic API（真實 AI 產生）");
+        } else {
+          console.log("[TasteMap] 約會建議來源：⚠️ Fallback（API key 未設定或 API 呼叫失敗，使用預設內容）");
+        }
         setAdvice(data);
       }
     } catch {
+      console.log("[TasteMap] 約會建議來源：❌ 前端 Fallback（API route 請求失敗，使用本地預設內容）");
       const sharedFoodTypes = viewerProfile.foodPreferences.filter((food) =>
         user.foodPreferences.includes(food)
       );
@@ -80,6 +86,7 @@ export function CandidateCard({ user, viewerProfile }: Props) {
       setAdvice({
         reason: "你們已經有足夠的口味重疊，直接開啟話題會很自然。",
         suggestedMessage: `看起來我們都喜歡${firstSharedFoodLabel}，這週要不要一起去吃？`,
+        source: "fallback",
       });
     } finally {
       setLoadingAdvice(false);
