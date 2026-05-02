@@ -56,7 +56,8 @@ export async function generateInviteAdvice(input: AdviceInput): Promise<AdviceOu
       ],
     });
 
-    const text = message.content[0].type === "text" ? message.content[0].text.trim() : "";
+    const raw = message.content[0].type === "text" ? message.content[0].text.trim() : "";
+    const text = raw.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").trim();
     const parsed = JSON.parse(text) as Omit<AdviceOutput, "source">;
     if (parsed.reason && parsed.suggestedMessage) return { ...parsed, source: "api" };
     return fallback(input.sharedFoodTypes, "api-error");

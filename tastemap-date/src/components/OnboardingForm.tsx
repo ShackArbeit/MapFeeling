@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -53,6 +54,7 @@ type FormValues = z.infer<typeof schema>;
 
 export function OnboardingForm() {
   const router = useRouter();
+  const [, startTransition] = useTransition();
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -89,7 +91,9 @@ export function OnboardingForm() {
     };
 
     localStorage.setItem("tastemap.viewerProfile", JSON.stringify(profile));
-    router.push("/map");
+    startTransition(() => {
+      router.push("/map");
+    });
   }
 
   return (
