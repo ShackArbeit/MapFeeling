@@ -94,4 +94,4 @@ Click **「接受邀約」** → status changes to **已接受**
 - **AI is optional**: fallback ensures demo stability without an API key
 - **Match score is pure function**: explainable, testable, no AI black box
 - **Privacy-first**: jittered coordinates only, no exact addresses
-- **Deploy-ready**: Dockerfile + Cloud Run + Secret Manager wired up
+- **Deploy-ready**: Dockerfile + Cloud Run + GitHub Actions secret injection wired up

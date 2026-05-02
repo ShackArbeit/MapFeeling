@@ -28,7 +28,7 @@
 ## Cloud Run Instead of Vercel
 
 **Decision:** Deploy to GCP Cloud Run with Docker + Artifact Registry.  
-**Reason:** The job requires GCP experience. Cloud Run gives containerized deploys, custom environment variables, Secret Manager integration, and no vendor lock-in to Vercel. The standalone Next.js output fits perfectly.
+**Reason:** The job requires GCP experience. Cloud Run gives containerized deploys, custom environment variables, and no vendor lock-in to Vercel. The standalone Next.js output fits perfectly.
 
 ## GitHub Actions + Workload Identity Federation
 

@@ -57,7 +57,7 @@ GitHub Actions (push to main)
 
 - **Cloud Run** for zero-cold-start-management, pay-per-use, HTTPS out of the box
 - **Artifact Registry** for Docker image storage
-- **Secret Manager** for `ANTHROPIC_API_KEY`
+- GitHub Actions secret passed into Cloud Run as `ANTHROPIC_API_KEY`
 - **Workload Identity Federation** — no long-lived service account keys in GitHub
 
 ## Safety Constraints
