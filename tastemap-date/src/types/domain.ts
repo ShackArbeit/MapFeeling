@@ -33,23 +33,6 @@ export type UserProfile = {
   createdAt: string;
 };
 
-export type DateRequestStatus = "pending" | "accepted" | "rejected";
-
-export type DateRequest = {
-  id: string;
-  senderId: string;
-  receiverId: string;
-  foodType: FoodType;
-  proposedArea: string;
-  proposedPlaceName: string;
-  proposedTime: string;
-  message: string;
-  aiReason: string;
-  status: DateRequestStatus;
-  createdAt: string;
-  updatedAt: string;
-};
-
 export type MatchScoreBreakdown = {
   foodOverlapScore: number;
   zodiacElementScore: number;

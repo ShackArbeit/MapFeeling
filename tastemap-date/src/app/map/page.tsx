@@ -14,6 +14,10 @@ const TasteMap = dynamic(
   { ssr: false }
 );
 
+function normalizeAreaName(area: string): string {
+  return area.trim().replace(/\u5340$/, "");
+}
+
 export default function MapPage() {
   const router = useRouter();
   const [users, setUsers] = useState<UserProfile[]>([]);
@@ -25,10 +29,11 @@ export default function MapPage() {
   useEffect(() => {
     const stored = localStorage.getItem("tastemap.viewerProfile");
     if (!stored) return;
+
     try {
       setViewerProfile(JSON.parse(stored) as UserProfile);
     } catch {
-      // corrupted data, ignore
+      // Ignore corrupted viewer profile data.
     }
   }, []);
 
@@ -36,6 +41,7 @@ export default function MapPage() {
     function onPopState() {
       clearUserSession();
     }
+
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
@@ -48,30 +54,43 @@ export default function MapPage() {
   useEffect(() => {
     const qs = new URLSearchParams({ limit: "240" });
     if (selectedFood) qs.set("foodType", selectedFood);
+    if (viewerProfile?.preferredArea) qs.set("area", viewerProfile.preferredArea);
+
+    setLoading(true);
 
     fetch(`/api/profiles?${qs}`)
       .then((r) => r.json())
       .then((data: { items: UserProfile[] }) => {
         setUsers(data.items ?? []);
       })
-      .catch(() => {})
+      .catch(() => {
+        setUsers([]);
+      })
       .finally(() => setLoading(false));
-  }, [selectedFood]);
+  }, [selectedFood, viewerProfile?.preferredArea]);
 
-  // When no tag is selected, narrow to users who share at least one food type with the viewer.
-  // When a tag is selected, the API already filters — show all results freely.
   const displayedUsers = useMemo(() => {
-    if (selectedFood) return users;
-    if (!viewerProfile?.foodPreferences.length) return users;
-    return users.filter((u) =>
-      u.foodPreferences.some((f) => viewerProfile.foodPreferences.includes(f))
+    const areaFilteredUsers = viewerProfile?.preferredArea
+      ? users.filter(
+          (user) =>
+            normalizeAreaName(user.preferredArea) ===
+            normalizeAreaName(viewerProfile.preferredArea)
+        )
+      : users;
+
+    return areaFilteredUsers;
+  }, [users, viewerProfile]);
+
+  useEffect(() => {
+    setSelectedUser((current) =>
+      current && displayedUsers.some((user) => user.id === current.id) ? current : null
     );
-  }, [users, selectedFood, viewerProfile]);
+  }, [displayedUsers]);
 
   const activeSelectedUser = useMemo(() => {
     if (!selectedUser) return null;
-    return users.find((user) => user.id === selectedUser.id) ?? null;
-  }, [selectedUser, users]);
+    return displayedUsers.find((user) => user.id === selectedUser.id) ?? null;
+  }, [selectedUser, displayedUsers]);
 
   return (
     <div className="page-shell flex h-screen flex-col overflow-hidden">
@@ -105,8 +124,15 @@ export default function MapPage() {
       <div className="flex flex-1 overflow-hidden">
         <div className="relative flex-1">
           <div className="pointer-events-none absolute inset-x-4 top-4 z-[450] flex justify-between">
-            <div className="rounded-full border border-white/10 bg-slate-950/70 px-4 py-2 text-xs uppercase tracking-[0.24em] text-stone-300 backdrop-blur">
-              Taipei Taste Atlas
+            <div className="flex gap-2">
+              <div className="rounded-full border border-white/10 bg-slate-950/70 px-4 py-2 text-xs uppercase tracking-[0.24em] text-stone-300 backdrop-blur">
+                Taipei Taste Atlas
+              </div>
+              {viewerProfile?.preferredArea && (
+                <div className="rounded-full border border-sky-200/20 bg-sky-300/10 px-4 py-2 text-xs text-sky-100 backdrop-blur">
+                  區域：{viewerProfile.preferredArea}
+                </div>
+              )}
             </div>
             <div className="rounded-full border border-amber-200/15 bg-amber-300/10 px-4 py-2 text-xs text-amber-100 backdrop-blur">
               {displayedUsers.length} profiles

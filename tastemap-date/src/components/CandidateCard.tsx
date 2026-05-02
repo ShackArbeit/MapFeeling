@@ -5,7 +5,6 @@ import Link from "next/link";
 import type { UserProfile } from "@/types/domain";
 import type { AdviceOutput } from "@/lib/ai/generateInviteAdvice";
 import { calculateMatchScore } from "@/features/matching/calculateMatchScore";
-import { DateRequestDialog } from "@/components/DateRequestDialog";
 import { FOOD_TYPE_LABELS } from "@/data/food-types";
 import {
   Card,
@@ -25,12 +24,10 @@ interface Props {
 export function CandidateCard({ user, viewerProfile }: Props) {
   const [advice, setAdvice] = useState<AdviceOutput | null>(null);
   const [loadingAdvice, setLoadingAdvice] = useState(false);
-  const [sentRequestId, setSentRequestId] = useState<string | null>(null);
   const actionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setAdvice(null);
-    setSentRequestId(null);
     setLoadingAdvice(false);
   }, [user.id]);
 
@@ -42,13 +39,16 @@ export function CandidateCard({ user, viewerProfile }: Props) {
 
   async function handleGenerateAdvice() {
     if (!viewerProfile) return;
+
     setLoadingAdvice(true);
+
     try {
       const breakdown = calculateMatchScore(viewerProfile, user);
-      const sharedFoodTypes = viewerProfile.foodPreferences.filter((f) =>
-        user.foodPreferences.includes(f)
+      const sharedFoodTypes = viewerProfile.foodPreferences.filter((food) =>
+        user.foodPreferences.includes(food)
       );
-      const res = await fetch("/api/match-advice", {
+
+      const response = await fetch("/api/match-advice", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -60,22 +60,26 @@ export function CandidateCard({ user, viewerProfile }: Props) {
           candidateVibe: user.vibePrompt,
         }),
       });
-      if (!res.ok) throw new Error(`API error ${res.status}`);
-      const data = (await res.json()) as AdviceOutput;
+
+      if (!response.ok) {
+        throw new Error(`API error ${response.status}`);
+      }
+
+      const data = (await response.json()) as AdviceOutput;
       if (data.reason && data.suggestedMessage) {
         setAdvice(data);
       }
     } catch {
-      // API 失敗時使用本地 fallback，讓流程仍可繼續
-      const sharedFoodTypes = viewerProfile.foodPreferences.filter((f) =>
-        user.foodPreferences.includes(f)
+      const sharedFoodTypes = viewerProfile.foodPreferences.filter((food) =>
+        user.foodPreferences.includes(food)
       );
-      const label = sharedFoodTypes[0]
+      const firstSharedFoodLabel = sharedFoodTypes[0]
         ? FOOD_TYPE_LABELS[sharedFoodTypes[0]]
-        : "美食";
+        : "咖啡";
+
       setAdvice({
-        reason: `你們都對相同的飲食風格有興趣，互動偏好適合從輕鬆的餐飲邀約開始。`,
-        suggestedMessage: `我看到你也喜歡 ${label}，要不要找個週末午後一起去試試？`,
+        reason: "你們已經有足夠的口味重疊，直接開啟話題會很自然。",
+        suggestedMessage: `看起來我們都喜歡${firstSharedFoodLabel}，這週要不要一起去吃？`,
       });
     } finally {
       setLoadingAdvice(false);
@@ -101,10 +105,10 @@ export function CandidateCard({ user, viewerProfile }: Props) {
       </CardHeader>
 
       <CardContent className="space-y-3">
-        <p className="text-sm text-stone-300">{user.bio || "這位使用者還沒有填寫自我介紹。"}</p>
+        <p className="text-sm text-stone-300">{user.bio || "目前還沒有自我介紹。"}</p>
 
         <div>
-          <p className="mb-1.5 text-xs font-medium text-stone-400">飲食偏好</p>
+          <p className="mb-1.5 text-xs font-medium text-stone-400">喜歡的食物</p>
           <div className="flex flex-wrap gap-1">
             {user.foodPreferences.map((food) => (
               <Badge
@@ -123,15 +127,19 @@ export function CandidateCard({ user, viewerProfile }: Props) {
         </div>
 
         <div>
-          <p className="mb-1 text-xs font-medium text-stone-400">約會氛圍</p>
+          <p className="mb-1 text-xs font-medium text-stone-400">約會感覺</p>
           <p className="text-sm italic text-stone-300">&ldquo;{user.vibePrompt}&rdquo;</p>
         </div>
 
         <div>
-          <p className="mb-1.5 text-xs font-medium text-stone-400">可約時間</p>
+          <p className="mb-1.5 text-xs font-medium text-stone-400">方便時段</p>
           <div className="flex flex-wrap gap-1">
             {user.availableSlots.map((slot) => (
-              <Badge key={slot} variant="outline" className="border-white/10 bg-black/10 text-xs text-stone-300">
+              <Badge
+                key={slot}
+                variant="outline"
+                className="border-white/10 bg-black/10 text-xs text-stone-300"
+              >
                 {slot}
               </Badge>
             ))}
@@ -139,12 +147,12 @@ export function CandidateCard({ user, viewerProfile }: Props) {
         </div>
 
         <p className="border-t border-white/10 pt-2 text-xs text-stone-400">
-          {user.safetyNote || "建議先在公開場合碰面。"}
+          {user.safetyNote || "地圖位置僅顯示區域等級，不會顯示精確地點。"}
         </p>
 
         <div ref={actionRef} className="space-y-2">
           {advice && (
-            <div className="rounded-2xl border border-amber-200/15 bg-amber-300/10 p-3 space-y-2">
+            <div className="space-y-2 rounded-2xl border border-amber-200/15 bg-amber-300/10 p-3">
               <p className="text-xs text-amber-100">{advice.reason}</p>
               <p className="text-sm italic text-stone-100">&ldquo;{advice.suggestedMessage}&rdquo;</p>
             </div>
@@ -152,7 +160,7 @@ export function CandidateCard({ user, viewerProfile }: Props) {
 
           {viewerProfile ? (
             <>
-              {!advice && !sentRequestId && (
+              {!advice && (
                 <Button
                   className="w-full"
                   size="sm"
@@ -160,34 +168,19 @@ export function CandidateCard({ user, viewerProfile }: Props) {
                   onClick={handleGenerateAdvice}
                   disabled={loadingAdvice}
                 >
-                  {loadingAdvice ? "生成中..." : "產生邀約建議"}
+                  {loadingAdvice ? "產生中..." : "產生邀約建議"}
                 </Button>
-              )}
-
-              {advice && !sentRequestId && (
-                <DateRequestDialog
-                  viewer={viewerProfile}
-                  candidate={user}
-                  suggestedMessage={advice.suggestedMessage}
-                  onSent={(req) => setSentRequestId(req.id)}
-                />
-              )}
-
-              {sentRequestId && (
-                <div className="space-y-1 text-center">
-                  <p className="text-sm font-medium text-emerald-300">邀請已送出</p>
-                  <Link href="/inbox" className="text-xs text-amber-200 hover:underline">
-                    前往收件匣查看
-                  </Link>
-                </div>
               )}
             </>
           ) : (
             <p className="rounded-xl border border-white/8 bg-black/15 px-3 py-2.5 text-center text-xs text-stone-400">
-              <Link href="/onboarding" className="font-medium text-amber-200 hover:text-amber-100 hover:underline">
-                先建立個人檔案
+              <Link
+                href="/onboarding"
+                className="font-medium text-amber-200 hover:text-amber-100 hover:underline"
+              >
+                先完成 onboarding
               </Link>
-              ，才能產生邀約與發送請求。
+              {" "}才能看到邀約建議。
             </p>
           )}
         </div>

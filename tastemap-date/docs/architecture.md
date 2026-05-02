@@ -11,15 +11,11 @@ Browser (Next.js SSR/CSR)
   │
   ├── /            → Landing Page
   ├── /onboarding  → Profile creation (stored in localStorage)
-  ├── /map         → TasteMap with Leaflet (SSR disabled)
-  └── /inbox       → Date request inbox (accept/reject)
+  └── /map         → TasteMap with Leaflet (SSR disabled)
   │
   └── Next.js Route Handlers (API)
         ├── GET  /api/profiles
-        ├── POST /api/match-advice   → Anthropic Claude API
-        ├── POST /api/date-requests  → Firestore mode only
-        ├── GET  /api/date-requests  → Firestore mode only
-        └── PATCH /api/date-requests/:id
+        └── POST /api/match-advice   → Anthropic Claude API
 ```
 
 ## Frontend
@@ -44,17 +40,10 @@ Browser (Next.js SSR/CSR)
 - Seeded with a fixed seed for reproducibility
 - Mock users committed to `src/data/mock-users.generated.json`
 - No real addresses — approximate Taipei/New Taipei area coordinates with jitter
-- Mutable state (date requests) stored via `DateRequestStore` adapter:
-  - **local mode**: browser `localStorage`
-  - **firestore mode**: GCP Firestore via `firebase-admin`
 
 ## Why Mock Profiles Are Acceptable
 
 This is an interview MVP with a 3-day timebox. The goal is to demonstrate product thinking and full-stack ability, not database design. Deterministic mock data is reproducible, fast to demo, and avoids privacy concerns entirely.
-
-## Why DateRequestStore Is Behind an Adapter
-
-The adapter pattern allows switching from `localStorage` to Firestore without changing any UI code. This demonstrates architectural thinking and makes the demo robust even without GCP credentials.
 
 ## GCP Deploy Strategy
 

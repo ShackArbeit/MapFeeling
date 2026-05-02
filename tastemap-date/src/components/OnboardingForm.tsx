@@ -29,24 +29,24 @@ import { calculateZodiac } from "@/features/zodiac/zodiac";
 import type { FoodType, UserProfile } from "@/types/domain";
 
 const SLOT_OPTIONS = [
-  "週一晚上",
-  "週二晚上",
-  "週三晚上",
-  "週四晚上",
-  "週五晚上",
-  "週六中午",
-  "週六晚上",
-  "週日中午",
-  "週日晚上",
+  "平日午餐",
+  "平日晚餐",
+  "平日深夜",
+  "週六午餐",
+  "週六晚餐",
+  "週六深夜",
+  "週日午餐",
+  "週日晚餐",
+  "週日深夜",
 ];
 
 const schema = z.object({
   nickname: z.string().min(2, "暱稱至少 2 個字").max(20, "暱稱最多 20 個字"),
-  birthDate: z.string().min(1, "請填寫生日"),
-  foodPreferences: z.array(z.string()).min(1, "請至少選擇一種飲食偏好"),
+  birthDate: z.string().min(1, "請選擇生日"),
+  foodPreferences: z.array(z.string()).min(1, "請至少選擇一種食物偏好"),
   preferredArea: z.string().min(1, "請選擇常活動區域"),
-  availableSlots: z.array(z.string()).min(1, "請至少選擇一個可約時間"),
-  vibePrompt: z.string().min(5, "請至少輸入 5 個字").max(200, "最多 200 個字"),
+  availableSlots: z.array(z.string()).min(1, "請至少選擇一個方便時段"),
+  vibePrompt: z.string().min(5, "至少輸入 5 個字").max(200, "最多 200 個字"),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -67,9 +67,7 @@ export function OnboardingForm() {
 
   function onSubmit(values: FormValues) {
     const { zodiacSign, zodiacElement } = calculateZodiac(values.birthDate);
-    const area =
-      TAIPEI_AREAS.find((a) => a.name === values.preferredArea) ??
-      TAIPEI_AREAS[0];
+    const area = TAIPEI_AREAS.find((item) => item.name === values.preferredArea) ?? TAIPEI_AREAS[0];
 
     const profile: UserProfile = {
       id: "viewer",
@@ -107,7 +105,7 @@ export function OnboardingForm() {
                 <FormControl>
                   <Input
                     className="h-11 rounded-2xl border-white/10 bg-white/5 px-4 text-base text-stone-50 placeholder:text-stone-500"
-                    placeholder="例如：深夜拉麵巡航員"
+                    placeholder="你希望別人怎麼稱呼你？"
                     {...field}
                   />
                 </FormControl>
@@ -140,7 +138,7 @@ export function OnboardingForm() {
           name="foodPreferences"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-base text-stone-200">你最常想吃什麼</FormLabel>
+              <FormLabel className="text-base text-stone-200">喜歡的食物</FormLabel>
               <div className="grid grid-cols-2 gap-3 pt-2 md:grid-cols-3">
                 {FOOD_TYPES.map((food) => (
                   <div
@@ -155,7 +153,7 @@ export function OnboardingForm() {
                         if (checked) {
                           field.onChange([...field.value, food]);
                         } else {
-                          field.onChange(field.value.filter((v) => v !== food));
+                          field.onChange(field.value.filter((value) => value !== food));
                         }
                       }}
                     />
@@ -178,11 +176,16 @@ export function OnboardingForm() {
           name="preferredArea"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-base text-stone-200">常活動區域</FormLabel>
-              <Select onValueChange={field.onChange} value={field.value}>
+              <div id="preferred-area-label" className="text-base text-stone-200">
+                常活動區域
+              </div>
+              <Select name="preferredArea" onValueChange={field.onChange} value={field.value}>
                 <FormControl>
-                  <SelectTrigger className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-base text-stone-100">
-                    <SelectValue placeholder="選擇一個區域" />
+                  <SelectTrigger
+                    aria-labelledby="preferred-area-label"
+                    className="h-11 w-full rounded-2xl border-white/10 bg-white/5 px-4 text-base text-stone-100"
+                  >
+                    <SelectValue placeholder="選擇你的常活動區域" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
@@ -203,7 +206,7 @@ export function OnboardingForm() {
           name="availableSlots"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-base text-stone-200">你通常什麼時候方便</FormLabel>
+              <FormLabel className="text-base text-stone-200">方便時段</FormLabel>
               <div className="grid grid-cols-2 gap-3 pt-2 md:grid-cols-3">
                 {SLOT_OPTIONS.map((slot) => (
                   <div
@@ -218,7 +221,7 @@ export function OnboardingForm() {
                         if (checked) {
                           field.onChange([...field.value, slot]);
                         } else {
-                          field.onChange(field.value.filter((v) => v !== slot));
+                          field.onChange(field.value.filter((value) => value !== slot));
                         }
                       }}
                     />
@@ -245,7 +248,7 @@ export function OnboardingForm() {
               <FormControl>
                 <Textarea
                   className="min-h-28 rounded-[1.4rem] border-white/10 bg-white/5 px-4 py-3 text-base text-stone-100 placeholder:text-stone-500"
-                  placeholder="例如：可以一起散步、聊天不急、喜歡找有氣氛的小店。"
+                  placeholder="描述你期待的約會氛圍或相處感覺。"
                   rows={3}
                   {...field}
                 />
@@ -260,7 +263,7 @@ export function OnboardingForm() {
           className="h-12 w-full rounded-full bg-amber-300 text-slate-950 hover:bg-amber-200"
           size="lg"
         >
-          完成並進入地圖
+          進入地圖
         </Button>
       </form>
     </Form>

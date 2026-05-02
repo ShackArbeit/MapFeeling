@@ -25,27 +25,6 @@ type UserProfile = {
 };
 ```
 
-## DateRequest
-
-Represents a date invitation sent from one user to another. Mutable — stored via `DateRequestStore` adapter.
-
-```ts
-type DateRequest = {
-  id: string;              // UUID
-  senderId: string;        // Viewer's profile id
-  receiverId: string;      // Candidate's id
-  foodType: FoodType;      // Proposed food type for the date
-  proposedArea: string;    // Proposed area name
-  proposedPlaceName: string; // Suggested place name
-  proposedTime: string;    // e.g. "週末午後"
-  message: string;         // Personal message
-  aiReason: string;        // AI-generated invite reason
-  status: DateRequestStatus; // "pending" | "accepted" | "rejected"
-  createdAt: string;       // ISO timestamp
-  updatedAt: string;       // ISO timestamp
-};
-```
-
 ## MatchScoreBreakdown
 
 Result of pure-function match scoring. Never computed by AI.
