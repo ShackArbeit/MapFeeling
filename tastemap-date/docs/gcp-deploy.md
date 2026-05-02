@@ -17,10 +17,6 @@ The following resources have already been created:
 - GitHub deployer service account: `github-deployer@tastemap-date-494806.iam.gserviceaccount.com`
 - Workload Identity Pool: `github-pool`
 - Workload Identity Provider: `github-provider`
-- Secret Manager secret: `ANTHROPIC_API_KEY`
-
-The current `ANTHROPIC_API_KEY` secret contains a placeholder value. Replace it with a real API key before production use.
-
 ## Enabled Services
 
 These APIs have been enabled on `tastemap-date-494806`:
@@ -30,7 +26,6 @@ gcloud services enable \
   run.googleapis.com \
   artifactregistry.googleapis.com \
   cloudbuild.googleapis.com \
-  secretmanager.googleapis.com \
   firestore.googleapis.com \
   iamcredentials.googleapis.com \
   --project=tastemap-date-494806
@@ -54,14 +49,6 @@ Runtime service account:
 gcloud iam service-accounts create tastemap-runner \
   --display-name="TasteMap Cloud Run runtime service account" \
   --project=tastemap-date-494806
-```
-
-Grant Secret Manager access:
-
-```bash
-gcloud projects add-iam-policy-binding tastemap-date-494806 \
-  --member="serviceAccount:tastemap-runner@tastemap-date-494806.iam.gserviceaccount.com" \
-  --role="roles/secretmanager.secretAccessor"
 ```
 
 Optional Firestore access:
@@ -132,21 +119,9 @@ gcloud iam service-accounts add-iam-policy-binding \
   --member="principalSet://iam.googleapis.com/projects/1048249578662/locations/global/workloadIdentityPools/github-pool/attribute.repository/ShackArbeit/MapFeeling"
 ```
 
-## Secret Rotation
+## GitHub Actions Variables & Secrets
 
-Replace the placeholder Anthropic key:
-
-```bash
-echo -n "your-real-anthropic-api-key" | gcloud secrets versions add ANTHROPIC_API_KEY \
-  --data-file=- \
-  --project=tastemap-date-494806
-```
-
-If you do not want to use Anthropic in Cloud Run yet, remove `--set-secrets` from the deploy command. The app falls back to deterministic local copy.
-
-## GitHub Actions Variables
-
-The workflow expects these repository variables in GitHub Actions:
+The workflow expects these repository **variables** in GitHub Actions (Settings → Secrets and variables → Actions → Variables):
 
 | Variable | Value |
 |---|---|
@@ -158,7 +133,11 @@ The workflow expects these repository variables in GitHub Actions:
 | `GCP_SERVICE_ACCOUNT` | `github-deployer@tastemap-date-494806.iam.gserviceaccount.com` |
 | `GCP_WORKLOAD_IDENTITY_PROVIDER` | `projects/1048249578662/locations/global/workloadIdentityPools/github-pool/providers/github-provider` |
 
-These still need to be added manually because `gh` CLI is not installed in this environment.
+And this repository **secret** (Settings → Secrets and variables → Actions → Secrets):
+
+| Secret | Value |
+|---|---|
+| `ANTHROPIC_API_KEY` | Your Anthropic API key (`sk-ant-...`) |
 
 ## Manual Deploy
 
@@ -178,8 +157,7 @@ gcloud run deploy tastemap-date-web \
   --platform=managed \
   --allow-unauthenticated \
   --service-account=tastemap-runner@tastemap-date-494806.iam.gserviceaccount.com \
-  --set-env-vars="NEXT_PUBLIC_APP_ENV=production,NEXT_PUBLIC_STORAGE_MODE=local,STORAGE_MODE=local" \
-  --set-secrets="ANTHROPIC_API_KEY=ANTHROPIC_API_KEY:latest" \
+  --set-env-vars="NEXT_PUBLIC_APP_ENV=production,NEXT_PUBLIC_STORAGE_MODE=local,STORAGE_MODE=local,ANTHROPIC_API_KEY=YOUR_KEY" \
   --project=tastemap-date-494806
 ```
 

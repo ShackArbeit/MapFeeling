@@ -33,7 +33,7 @@ TasteMap Date starts with food — a low-pressure shared interest that naturally
 | Storage | localStorage (adapter-based, Firestore-ready) |
 | Deploy | GCP Cloud Run + Artifact Registry |
 | CI/CD | GitHub Actions + Workload Identity Federation |
-| Secrets | GCP Secret Manager |
+| Secrets | GitHub Actions Secrets |
 | Testing | Vitest + Playwright |
 
 ---
@@ -148,7 +148,7 @@ gcloud run deploy tastemap-date-web \
   --image=asia-east1-docker.pkg.dev/PROJECT_ID/tastemap-date/tastemap-date-web:latest \
   --region=asia-east1 \
   --allow-unauthenticated \
-  --set-secrets="ANTHROPIC_API_KEY=ANTHROPIC_API_KEY:latest"
+  --set-env-vars="ANTHROPIC_API_KEY=YOUR_KEY"
 ```
 
 **CI/CD:** Push to `main` → GitHub Actions runs tests → builds Docker image → pushes to Artifact Registry → deploys to Cloud Run. Uses Workload Identity Federation (no long-lived service account keys).

@@ -12,6 +12,7 @@ env:
   REPOSITORY: ${{ vars.GCP_ARTIFACT_REPOSITORY }}
   SERVICE: ${{ vars.CLOUD_RUN_SERVICE }}
   IMAGE_NAME: tastemap-date-web
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   test-build-deploy:
@@ -83,8 +84,7 @@ jobs:
             --platform=managed \
             --allow-unauthenticated \
             --service-account=tastemap-runner@$PROJECT_ID.iam.gserviceaccount.com \
-            --set-env-vars="NEXT_PUBLIC_APP_ENV=production,NEXT_PUBLIC_STORAGE_MODE=local,STORAGE_MODE=local" \
-            --set-secrets="ANTHROPIC_API_KEY=ANTHROPIC_API_KEY:latest"
+            --set-env-vars="NEXT_PUBLIC_APP_ENV=production,NEXT_PUBLIC_STORAGE_MODE=local,STORAGE_MODE=local,ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}"
 
       - name: Show Cloud Run URL
         run: |
